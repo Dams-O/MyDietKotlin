@@ -13,6 +13,11 @@ import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import android.provider.AlarmClock.EXTRA_MESSAGE
+import android.widget.EditText
+
+
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -38,8 +43,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
     fun btnConnexion(view: View) {
-        val intent = Intent(this, Connexion::class.java)
-        startActivity(intent);
+        val connexion = Intent(this, Connexion::class.java)
+        startActivity(connexion);
     }
 
     override fun onBackPressed() {
@@ -66,19 +71,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_camera -> {
+            R.id.nav_mon_profil -> {
                 // Handle the camera action
+                /** Called when the user taps the Send button */
+                    val intent = Intent(this, Profil::class.java)
+                    startActivity(intent)
             }
-            R.id.nav_gallery -> {
+            R.id.nav_menu_type -> {
 
             }
-            R.id.nav_slideshow -> {
+            R.id.nav_mes_journees -> {
 
             }
-            R.id.nav_manage -> {
+            R.id.nav_mon_suivi -> {
 
             }
             R.id.nav_share -> {

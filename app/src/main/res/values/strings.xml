@@ -6,4 +6,15 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="mon_profil">Mon Profil</string>
+    <string name="menu_type">Menu Type</string>
+    <string name="mes_journees">Mes Journées</string>
+    <string name="mon_suivi">Mon Suivi</string>
+    <string name="version_btn">Mon Suivi</string>
+    <string name="identifiant">Identifiant :</string>
+    <string name="password">Mot de passe :</string>
+    <string name="button_inscription">Inscription</string>
+    <string name="button_connexion">Connexion</string>
+
+
 </resources>
