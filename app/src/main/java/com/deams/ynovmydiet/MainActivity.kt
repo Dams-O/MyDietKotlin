@@ -83,6 +83,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_menu_type -> {
 
+                val menuType = Intent(this, MenuType::class.java)
+                startActivity(menuType)
+
             }
             R.id.nav_mes_journees -> {
 
