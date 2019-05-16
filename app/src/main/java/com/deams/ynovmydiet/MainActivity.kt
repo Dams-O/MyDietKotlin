@@ -1,8 +1,6 @@
 package com.deams.ynovmydiet
 
 import android.os.Bundle
-import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.android.material.snackbar.Snackbar
 import androidx.core.view.GravityCompat
 import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
@@ -12,10 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.content.Intent
-import android.util.Log
 import androidx.room.Room
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -74,14 +69,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when (item.itemId) {
             R.id.nav_menu_type -> {
                 // Handle the camera action
-                val intent1 = Intent(this@MainActivity, MenuType::class.java)
+                val intent1 = Intent(this@MainActivity, MenuTypeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_mon_suivi -> {
 
             }
             R.id.nav_mon_profil -> {
-                val intent2 = Intent(this@MainActivity, Profil::class.java)
+                val intent2 = Intent(this@MainActivity, ProfilActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {

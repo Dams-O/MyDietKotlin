@@ -27,7 +27,7 @@ import kotlinx.android.synthetic.main.activity_connexion.*
 /**
  * A login screen that offers login via email/password.
  */
-class Connexion : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> {
+class ConnexionActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> {
     /**
      * Keep track of the login task to ensure we can cancel it if requested.
      */
@@ -228,7 +228,7 @@ class Connexion : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cursor> {
     private fun addEmailsToAutoComplete(emailAddressCollection: List<String>) {
         //Create adapter to tell the AutoCompleteTextView what to show in its dropdown list.
         val adapter = ArrayAdapter(
-            this@Connexion,
+            this@ConnexionActivity,
             android.R.layout.simple_dropdown_item_1line, emailAddressCollection
         )
 

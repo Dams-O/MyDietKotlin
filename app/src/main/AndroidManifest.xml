@@ -23,13 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MenuType">
+        <activity android:name=".MenuTypeActivity">
         </activity>
         <activity
-                android:name=".Connexion"
+                android:name=".ConnexionActivity"
                 android:label="@string/title_activity_connexion">
         </activity>
-        <activity android:name=".Profil">
+        <activity android:name=".ProfilActivity">
         </activity>
     </application>
 

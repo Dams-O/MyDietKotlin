@@ -1,17 +1,30 @@
 package com.deams.ynovmydiet
 
-import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity
+class MenuType {
 
-class MenuType : AppCompatActivity() {
+    @PrimaryKey
+    var menuTypeId: Long? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_type)
+    @ColumnInfo(name = "user_id")
+    var userId: String? = null
 
-    }
+    @ColumnInfo(name = "breakfast")
+    var breakfast: Array<String>? = null
+
+    @ColumnInfo(name = "lunch")
+    var lunch: Array<String>? = null
+
+    @ColumnInfo(name = "dinner")
+    var dinner: Array<String>? = null
+
+    @ColumnInfo(name = "has_complement")
+    var hasComplement: Boolean? = null
+
+    @ColumnInfo(name = "complement")
+    var complement: Array<String>? = null
 }
