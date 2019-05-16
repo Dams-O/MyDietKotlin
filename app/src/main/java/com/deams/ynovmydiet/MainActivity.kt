@@ -24,11 +24,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val fab: FloatingActionButton = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val toggle = ActionBarDrawerToggle(
@@ -68,16 +63,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
-            R.id.nav_home -> {
+            R.id.nav_menu_type -> {
                 // Handle the camera action
+                val intent1 = Intent(this@MainActivity, MenuType::class.java)
+                startActivity(intent1)
             }
-            R.id.nav_gallery -> {
+            R.id.nav_mon_suivi -> {
 
             }
-            R.id.nav_slideshow -> {
-
+            R.id.nav_mon_profil -> {
+                val intent2 = Intent(this@MainActivity, Profil::class.java)
+                startActivity(intent2)
             }
-            R.id.nav_tools -> {
+            R.id.nav_mes_journees -> {
 
             }
             R.id.nav_share -> {

@@ -16,7 +16,7 @@
     <string name="button_inscription">Inscription</string>
     <string name="button_connexion">Connexion</string>
     <string name="title_activity_connexion_test">Connexion</string>
-    <string name="title">MyDiet</string>
+    <string name="title">MyDiedt</string>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
