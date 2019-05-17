@@ -19,16 +19,16 @@ class MenuTypeActivity : AppCompatActivity() {
         menuType.userId = 1
 
         var arrBreakfast = arrayOf(1, 5 ,4 ,8, 7, 2)
-        menuType.breakfast = arrBreakfast
+        menuType.breakfast = arrBreakfast.toString()
 
         var arrLunch = arrayOf(2, 4 ,1 , 6, 1, 5)
-        menuType.lunch = arrLunch
+        menuType.lunch = arrLunch.toString()
 
         var arrDinner = arrayOf(4, 1 ,2 , 7, 2, 3)
-        menuType.dinner = arrDinner
+        menuType.dinner = arrDinner.toString()
 
         var arrComplement = arrayOf(3, 7 , 4, 7, 6, 1)
-        menuType.complement = arrComplement
+        menuType.complement = arrComplement.toString()
 
         menuType.hasComplement = true
 

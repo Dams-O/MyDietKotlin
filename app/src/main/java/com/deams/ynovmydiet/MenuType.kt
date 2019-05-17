@@ -14,17 +14,17 @@ class MenuType {
     var userId: Long? = null
 
     @ColumnInfo(name = "breakfast")
-    var breakfast: Array<Int>? = null
+    var breakfast: String? = null
 
     @ColumnInfo(name = "lunch")
-    var lunch: Array<Int>? = null
+    var lunch: String? = null
 
     @ColumnInfo(name = "dinner")
-    var dinner: Array<Int>? = null
+    var dinner: String? = null
 
     @ColumnInfo(name = "has_complement")
     var hasComplement: Boolean? = null
 
     @ColumnInfo(name = "complement")
-    var complement: Array<Int>? = null
+    var complement: String? = null
 }
