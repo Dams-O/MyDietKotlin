@@ -232,7 +232,7 @@ class ConnexionActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Cur
             android.R.layout.simple_dropdown_item_1line, emailAddressCollection
         )
 
-        email.setAdapter(adapter)
+
     }
 
     object ProfileQuery {

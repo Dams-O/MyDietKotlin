@@ -29,6 +29,10 @@
                 android:name=".ConnexionActivity"
                 android:label="@string/title_activity_connexion">
         </activity>
+        <activity
+                android:name=".InscriptionActivity"
+                android:label="@string/title_activity_inscription">
+        </activity>
         <activity android:name=".ProfilActivity">
         </activity>
     </application>

@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.content.Intent
 import androidx.room.Room
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -19,11 +20,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        button2.setOnClickListener {
+            // Handler code here.
+            val intent2 = Intent(this@MainActivity, ConnexionActivity::class.java)
+            startActivity(intent2)
+        }
+
+        button3.setOnClickListener {
+            // Handler code here.
+            val intent2 = Intent(this@MainActivity, InscriptionActivity::class.java)
+            startActivity(intent2)
+        }
+
         val db = Room.databaseBuilder(
             applicationContext,
             AppDb::class.java,
             "mydietDb0"
-        ).allowMainThreadQueries().build()
+        ).fallbackToDestructiveMigration().build()
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
