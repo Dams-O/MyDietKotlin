@@ -12,18 +12,8 @@ class ProfilActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
 
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDb::class.java,
-            "mydietDb0"
-        ).fallbackToDestructiveMigration().build()
-
-        val user = User()
-        user.username = "test"
-        user.name = "titi"
-        user.lastname = "toto"
-        db.userDao().insertUser(user)
-        var users  = db.userDao().getAllUsers()
+        val database = AppDb.getInstance(this@ProfilActivity)
+        val users = database.userDao().getAllUsers()
 
         for (m in users){
             Log.i("Nom", m.name)

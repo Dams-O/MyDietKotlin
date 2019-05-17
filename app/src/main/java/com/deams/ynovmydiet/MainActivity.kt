@@ -32,12 +32,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             startActivity(intent2)
         }
 
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDb::class.java,
-            "mydietDb0"
-        ).fallbackToDestructiveMigration().build()
-
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
