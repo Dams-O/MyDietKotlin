@@ -19,6 +19,9 @@ class User {
     @ColumnInfo(name = "lastname")
     var lastname: String? = null
 
+    @ColumnInfo(name = "brithday")
+    var brithday: String? = null
+
     @ColumnInfo(name = "mail")
     var mail: String? = null
 
