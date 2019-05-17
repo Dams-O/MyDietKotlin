@@ -11,20 +11,20 @@ class MenuType {
     var menuTypeId: Long? = null
 
     @ColumnInfo(name = "user_id")
-    var userId: String? = null
+    var userId: Long? = null
 
     @ColumnInfo(name = "breakfast")
-    var breakfast: Array<String>? = null
+    var breakfast: Array<Int>? = null
 
     @ColumnInfo(name = "lunch")
-    var lunch: Array<String>? = null
+    var lunch: Array<Int>? = null
 
     @ColumnInfo(name = "dinner")
-    var dinner: Array<String>? = null
+    var dinner: Array<Int>? = null
 
     @ColumnInfo(name = "has_complement")
     var hasComplement: Boolean? = null
 
     @ColumnInfo(name = "complement")
-    var complement: Array<String>? = null
+    var complement: Array<Int>? = null
 }

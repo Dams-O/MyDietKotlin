@@ -10,7 +10,7 @@ interface MenuTypeDAO {
     fun insertMenuType(menuType: MenuType): Long?
 
     @Query("SELECT * from MenuType")
-    fun getAllMenuType(): List<User>
+    fun getAllMenuType(): List<MenuType>
 
     @Query("SELECT * FROM MenuType WHERE menuTypeId = :menuTypeId LIMIT 1")
     fun findMenuTypeById(menuTypeId: Long?): Food
