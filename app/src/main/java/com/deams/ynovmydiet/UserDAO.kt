@@ -15,6 +15,7 @@ interface UserDAO {
     @Query("SELECT * FROM User WHERE userId = :userId LIMIT 1")
     fun findUserById(userId: Long?): Food
 
+    @Update
     fun updateUser(user: User): Int
 
     @Delete

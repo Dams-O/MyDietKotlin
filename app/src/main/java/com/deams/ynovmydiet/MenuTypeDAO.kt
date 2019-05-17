@@ -13,8 +13,9 @@ interface MenuTypeDAO {
     fun getAllMenuType(): List<MenuType>
 
     @Query("SELECT * FROM MenuType WHERE menuTypeId = :menuTypeId LIMIT 1")
-    fun findMenuTypeById(menuTypeId: Long?): Food
+    fun findMenuTypeById(menuTypeId: Long?): MenuType
 
+    @Update
     fun updateMenuType(menuType: MenuType): Int
 
     @Delete

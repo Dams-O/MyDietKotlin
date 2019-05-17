@@ -3,6 +3,7 @@ package com.deams.ynovmydiet
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.*
 
 @Entity
 class User {
@@ -20,7 +21,7 @@ class User {
     var lastname: String? = null
 
     @ColumnInfo(name = "brithday")
-    var brithday: String? = null
+    var birthday: String? = null
 
     @ColumnInfo(name = "mail")
     var mail: String? = null
