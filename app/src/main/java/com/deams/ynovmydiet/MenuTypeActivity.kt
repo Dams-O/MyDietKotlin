@@ -14,7 +14,7 @@ class MenuTypeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_type)
-
+        //textView8.text=""
         val menuType = MenuType()
         menuType.userId = 1
 
@@ -32,16 +32,10 @@ class MenuTypeActivity : AppCompatActivity() {
 
         menuType.hasComplement = true
 
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDb::class.java,
-            "mydietDb0"
-        ).allowMainThreadQueries().build()
+        val database = AppDb.getInstance(this@MenuTypeActivity)
+        database.menuTypeDao().insertMenuType(menuType)
+        var menus = database.menuTypeDao().getAllMenuType()
 
-        db.menuTypeDao().insertMenuType(menuType)
-        var menus = db.menuTypeDao().getAllMenuType()
 
-        for (m in menus)
-            println(m.breakfast)
     }
 }

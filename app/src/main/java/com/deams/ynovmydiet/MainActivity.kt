@@ -20,6 +20,15 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val database = AppDb.getInstance(this@MainActivity)
+        //Insert TEST
+        val user = User()
+        user.username = "test"
+        user.name = "titi"
+        user.lastname = "Henry"
+        database.userDao().insertUser(user)
+
+
         button2.setOnClickListener {
             // Handler code here.
             val intent2 = Intent(this@MainActivity, ConnexionActivity::class.java)
