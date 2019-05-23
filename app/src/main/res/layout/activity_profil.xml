@@ -32,11 +32,13 @@
         <TextView
                 android:text="Nom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView4"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"/>
         <TextView
                 android:text="Prénom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/textView5"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"/>
         <TextView
                 android:text="Date de naissance"
                 android:layout_width="match_parent"
