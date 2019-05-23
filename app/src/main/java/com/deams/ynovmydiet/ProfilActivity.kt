@@ -43,13 +43,15 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_menu_type -> {
-
+                val intent2 = Intent(this@ProfilActivity, MenuTypeActivity::class.java)
+                startActivity(intent2)
             }
             R.id.nav_mon_suivi -> {
 
             }
             R.id.nav_mon_profil -> {
-
+                val intent2 = Intent(this@ProfilActivity, ProfilActivity::class.java)
+                startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
 
