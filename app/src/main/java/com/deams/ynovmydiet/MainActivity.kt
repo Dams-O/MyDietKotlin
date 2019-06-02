@@ -88,15 +88,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val intent1 = Intent(this@MainActivity, MenuTypeActivity::class.java)
                 startActivity(intent1)
             }
-            R.id.nav_mon_suivi -> {
-
-            }
             R.id.nav_mon_profil -> {
                 val intent2 = Intent(this@MainActivity, ProfilActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
 
+            }
+            R.id.nav_mon_suivi -> {
+                val intent4 = Intent(this@MainActivity, StatsActivity::class.java)
+                startActivity(intent4)
             }
             R.id.nav_message -> {
 
