@@ -24,6 +24,7 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val text1 = edt1.text.toString();
         val text2 = edt2.text.toString();
 
+        val testsarr = arrayOf("Banane","Croissant","Poire","Pomme","Steak","Frites","Hamburger","Lait")
         btn_click_me.setOnClickListener {
             // make a toast on button click event
             val repas = Meal()

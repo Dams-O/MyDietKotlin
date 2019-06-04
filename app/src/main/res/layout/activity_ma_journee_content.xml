@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="Champ1"
+                android:hint="Aliment 1"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <EditText
@@ -28,25 +28,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="Champ2"
+                android:hint="Aliment 2"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        <EditText
+                android:id="@+id/edt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Aliment 3"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <Button
                 android:id="@+id/btn_click_me"
-                android:text="Click me for Toast"
+                android:text="Enregistrer votre saisie"
                 android:textAllCaps="false"
                 android:padding="10dp"
                 android:textSize="25dp"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:background="@color/colorButton"/>
         <Button
                 android:id="@+id/btn2"
-                android:text="Click me for Toast"
+                android:text="Check de l'ajout"
                 android:textAllCaps="false"
                 android:padding="10dp"
                 android:textSize="25dp"
                 android:layout_width="280dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:background="@color/colorButton"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
