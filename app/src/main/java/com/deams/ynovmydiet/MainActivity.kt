@@ -93,7 +93,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-
+                val intent3 = Intent(this@MainActivity, MaJourneeActivity::class.java)
+                startActivity(intent3)
             }
             R.id.nav_mon_suivi -> {
                 val intent4 = Intent(this@MainActivity, StatsActivity::class.java)

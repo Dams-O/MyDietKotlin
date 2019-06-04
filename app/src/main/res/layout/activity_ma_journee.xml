@@ -7,4 +7,44 @@
         android:layout_height="match_parent"
         tools:context=".MaJourneeActivity">
 
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="25dp"
+            android:orientation="vertical">
+        <EditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Champ1"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        <EditText
+                android:id="@+id/edt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Champ2"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
+        <Button
+                android:id="@+id/btn_click_me"
+                android:text="Click me for Toast"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="25dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/btn2"
+                android:text="Click me for Toast"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:textSize="25dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
