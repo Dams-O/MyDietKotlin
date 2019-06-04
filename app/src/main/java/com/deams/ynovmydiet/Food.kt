@@ -10,7 +10,7 @@ class Food {
     var foodId: Long? = null
 
     @ColumnInfo(name = "name")
-    var name: Long? = null
+    var name: String? = null
 
     @ColumnInfo(name = "family")
     var family: String? = null

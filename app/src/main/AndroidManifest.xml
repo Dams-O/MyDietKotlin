@@ -13,6 +13,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".MenuJourneeActivity">
+        </activity>
         <activity android:name=".MaJourneeActivity">
         </activity>
         <activity android:name=".StatsActivity">

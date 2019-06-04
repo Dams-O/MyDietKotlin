@@ -3,7 +3,9 @@ package com.deams.ynovmydiet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -21,10 +23,20 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
         val database = AppDb.getInstance(this@MaJourneeActivity)
 
-        val text1 = edt1.text.toString();
-        val text2 = edt2.text.toString();
+        val foodList = ArrayList<String?>()
+        val testsarr = database.foodDao().getAllFoods()
+        for (food in testsarr){
+            foodList.add(food.name)
+        }
 
-        val testsarr = arrayOf("Banane","Croissant","Poire","Pomme","Steak","Frites","Hamburger","Lait")
+        val adapterAuto = ArrayAdapter<String>(
+            this,
+            android.R.layout.simple_dropdown_item_1line,
+            foodList
+        )
+
+        auto1.setAdapter(adapterAuto)
+
         btn_click_me.setOnClickListener {
             // make a toast on button click event
             val repas = Meal()

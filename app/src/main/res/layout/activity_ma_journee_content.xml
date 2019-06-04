@@ -15,6 +15,14 @@
             android:gravity="center"
             android:padding="25dp"
             android:orientation="vertical">
+        <AutoCompleteTextView
+                android:id="@+id/auto1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:hint="Aliment"
+                android:imeOptions="actionNext"
+                android:inputType="text"/>
         <EditText
                 android:id="@+id/edt1"
                 android:layout_width="match_parent"
@@ -47,6 +55,7 @@
                 android:textSize="25dp"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:textColor="@color/colorText"
                 android:background="@color/colorButton"/>
         <Button
