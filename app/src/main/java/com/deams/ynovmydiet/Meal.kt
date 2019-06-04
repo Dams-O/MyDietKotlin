@@ -3,6 +3,7 @@ package com.deams.ynovmydiet
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.*
 
 
 @Entity
@@ -13,6 +14,9 @@ class Meal {
 
     @ColumnInfo(name = "user_id")
     var userId: Long? = null
+
+    @ColumnInfo(name = "moment")
+    var moment: String? = null
 
     @ColumnInfo(name = "type")
     var type: String? = null

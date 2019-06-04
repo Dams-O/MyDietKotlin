@@ -20,10 +20,22 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stats)
 
+        val database = AppDb.getInstance(this@StatsActivity)
+        val arrFood = database.foodDao().getAllFoods()
+
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.HORIZONTAL, false)
 
-
+//        Create an arraylist
+        val dataList = ArrayList<Food>()
+        dataList.add(arrFood[0])
+        dataList.add(arrFood[1])
+        dataList.add(arrFood[2])
+        dataList.add(arrFood[3])
+//        pass the values to RvAdapter
+        val rvAdapter = RvAdapter(dataList)
+//        set the recyclerView to the adapter
+        recyclerView.adapter = rvAdapter;
 
 
 

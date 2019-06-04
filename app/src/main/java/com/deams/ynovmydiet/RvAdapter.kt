@@ -1,7 +1,11 @@
 package com.deams.ynovmydiet
 
+import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import kotlinx.android.synthetic.main.adapter_stats_layout.*
 
 class RvAdapter (val foodList: ArrayList<Food>):
     RecyclerView.Adapter<RvAdapter.ViewHolder>() {
@@ -15,12 +19,11 @@ class RvAdapter (val foodList: ArrayList<Food>):
     override fun onBindViewHolder(p0: ViewHolder, p1: Int) {
 
         p0.name?.text = foodList[p1].name
-        p0.count?.text = foodList[p1].count.toString()
+        p0.family?.text = foodList[p1].family
     }
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val name = itemView.findViewById<TextView>(R.id.tvName)
-        val count = itemView.findViewById<TextView>(R.id.tvCount)
+        val name = itemView.findViewById<TextView>(R.id.tv_title)
+        val family = itemView.findViewById<TextView>(R.id.tv_description)
 
     }
 }
-)

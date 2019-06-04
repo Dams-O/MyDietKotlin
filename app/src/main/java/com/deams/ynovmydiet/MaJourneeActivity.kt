@@ -21,6 +21,9 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ma_journee)
 
+        val intent = getIntent()
+        val moment = intent.getStringExtra("moment")
+        System.out.println(moment)
         val database = AppDb.getInstance(this@MaJourneeActivity)
 
         val foodList = ArrayList<String?>()

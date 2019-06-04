@@ -13,6 +13,19 @@ class MenuJourneeActivity : AppCompatActivity() {
 
         btn_ptidej.setOnClickListener {
             val intent1 = Intent(this@MenuJourneeActivity, MaJourneeActivity::class.java)
+            intent1.putExtra("moment", "Petit Dej")
+            startActivity(intent1)
+        }
+
+        btn_dej.setOnClickListener {
+            val intent1 = Intent(this@MenuJourneeActivity, MaJourneeActivity::class.java)
+            intent1.putExtra("moment", "Dejeune")
+            startActivity(intent1)
+        }
+
+        btn_diner.setOnClickListener {
+            val intent1 = Intent(this@MenuJourneeActivity, MaJourneeActivity::class.java)
+            intent1.putExtra("moment", "Diner")
             startActivity(intent1)
         }
     }
