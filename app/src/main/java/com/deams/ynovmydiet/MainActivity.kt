@@ -83,6 +83,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
+            R.id.nav_accueil -> {
+                // Handle the camera action
+                val intent1 = Intent(this@MainActivity, MainActivity::class.java)
+                startActivity(intent1)
+            }
             R.id.nav_menu_type -> {
                 // Handle the camera action
                 val intent1 = Intent(this@MainActivity, MenuTypeActivity::class.java)

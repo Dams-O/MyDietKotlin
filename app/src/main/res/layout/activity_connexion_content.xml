@@ -9,9 +9,8 @@ app:layout_behavior="@string/appbar_scrolling_view_behavior"
 tools:showIn="@layout/app_bar_connexion"
 tools:context=".ConnexionActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:tools="http://schemas.android.com/tools"
-                  android:layout_width="match_parent"
+    <LinearLayout
+            android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:gravity="center_horizontal"
                   android:orientation="vertical"
@@ -44,28 +43,27 @@ tools:context=".ConnexionActivity">
                 <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
-
-                    <com.google.android.material.textfield.TextInputEditText
+                    <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="@string/prompt_email" android:id="@+id/email"/>
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            android:id="@+id/email" android:layout_weight="1"
+                            android:hint="@string/prompt_email"/>
                 </com.google.android.material.textfield.TextInputLayout>
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/prompt_password" android:id="@+id/password"/>
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/password" android:hint="Mot de passe"/>
                 <Button
                         android:id="@+id/email_sign_in_button"
                         style="?android:textAppearanceSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:text="@string/action_sign_in"
+                        android:text="@string/action_sign_in_short"
                         android:textStyle="bold"/>
 
             </LinearLayout>

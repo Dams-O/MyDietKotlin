@@ -42,19 +42,26 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
+            R.id.nav_accueil -> {
+                // Handle the camera action
+                val intent1 = Intent(this@ProfilActivity, MainActivity::class.java)
+                startActivity(intent1)
+            }
             R.id.nav_menu_type -> {
                 val intent2 = Intent(this@ProfilActivity, MenuTypeActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mon_suivi -> {
-
+                val intent4 = Intent(this@ProfilActivity, StatsActivity::class.java)
+                startActivity(intent4)
             }
             R.id.nav_mon_profil -> {
                 val intent2 = Intent(this@ProfilActivity, ProfilActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-
+                val intent2 = Intent(this@ProfilActivity, MaJourneeActivity::class.java)
+                startActivity(intent2)
             }
             R.id.nav_message -> {
 
