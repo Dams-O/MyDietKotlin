@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.LinearLayout
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -12,7 +11,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_stats_content.*
 
 class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -23,15 +21,46 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         val database = AppDb.getInstance(this@StatsActivity)
         val arrFood = database.foodDao().getAllFoods()
 
+        val repas1 = ResumeMeal()
+        repas1.repasId = 0
+        repas1.date = "Lundi 03 Juin - Diner"
+        repas1.aliment = "Agneau, pomme de terre, Chèvre frais, Vin"
+        repas1.score = "En accord à 90%"
+
+        val repas2 = ResumeMeal()
+        repas2.repasId = 0
+        repas2.date = "Lundi 03 Juin - Déjeuner"
+        repas2.aliment = "Boeuf, Pattes, Pomme"
+        repas2.score = "En accord à 80%"
+
+        val repas3 = ResumeMeal()
+        repas3.repasId = 0
+        repas3.date = "Lundi 03 Juin - Petit Déjeuner"
+        repas3.aliment = "Cacao en poudre, Lait"
+        repas3.score = "En accord à 50%"
+
+        val repas4 = ResumeMeal()
+        repas4.repasId = 0
+        repas4.date = "Dimanche 02 Juin - Diner"
+        repas4.aliment = "Steak haché, Frites"
+        repas4.score = "En accord à 20%"
+
+        val repas5 = ResumeMeal()
+        repas5.repasId = 0
+        repas5.date = "Dimanche 02 Juin - Déjeuner"
+        repas5.aliment = "Jambon, Pattes, Emmental"
+        repas5.score = "En accord à 70%"
+
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        recyclerView.layoutManager = LinearLayoutManager(this, LinearLayout.HORIZONTAL, false)
+        recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
 //        Create an arraylist
-        val dataList = ArrayList<Food>()
-        dataList.add(arrFood[0])
-        dataList.add(arrFood[1])
-        dataList.add(arrFood[2])
-        dataList.add(arrFood[3])
+        val dataList = ArrayList<ResumeMeal>()
+        dataList.add(repas1)
+        dataList.add(repas2)
+        dataList.add(repas3)
+        dataList.add(repas4)
+        dataList.add(repas5)
 //        pass the values to RvAdapter
         val rvAdapter = RvAdapter(dataList)
 //        set the recyclerView to the adapter

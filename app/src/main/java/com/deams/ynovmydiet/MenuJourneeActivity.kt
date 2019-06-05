@@ -3,7 +3,7 @@ package com.deams.ynovmydiet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_menu_journee.*
+import kotlinx.android.synthetic.main.content_menu_journee.*
 
 class MenuJourneeActivity : AppCompatActivity() {
 
