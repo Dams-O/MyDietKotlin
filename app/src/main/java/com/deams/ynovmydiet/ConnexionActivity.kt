@@ -36,7 +36,7 @@ import kotlinx.android.synthetic.main.activity_connexion_content.*
 /**
  * A login screen that offers login via email/password.
  */
-class ConnexionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class ConnexionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,23 +45,13 @@ class ConnexionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val toggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        navView.setNavigationItemSelectedListener(this)
-
         val database = AppDb.getInstance(this@ConnexionActivity)
         val userNow = database.userDao().findUserById(0)
 
         btn_connexion.setOnClickListener {
             if(identifiant.text.toString().equals(userNow.username.toString())){
                 Toast.makeText(this, identifiant.text.toString() + " s'est connecté avec succès", Toast.LENGTH_LONG).show()
-                val intent1 = Intent(this@ConnexionActivity, ProfilActivity::class.java)
+                val intent1 = Intent(this@ConnexionActivity, HomeActivity::class.java)
                 intent1.putExtra("id", identifiant.text.toString())
                 startActivity(intent1)
             }
@@ -69,37 +59,4 @@ class ConnexionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.nav_accueil -> {
-                // Handle the camera action
-                val intent1 = Intent(this@ConnexionActivity, MainActivity::class.java)
-                startActivity(intent1)
-            }
-            R.id.nav_menu_type -> {
-                // Handle the camera action
-                val intent1 = Intent(this@ConnexionActivity, MenuTypeActivity::class.java)
-                startActivity(intent1)
-            }
-            R.id.nav_mon_profil -> {
-                val intent2 = Intent(this@ConnexionActivity, ProfilActivity::class.java)
-                startActivity(intent2)
-            }
-            R.id.nav_mes_journees -> {
-                val intent2 = Intent(this@ConnexionActivity, MaJourneeActivity::class.java)
-                startActivity(intent2)
-            }
-            R.id.nav_mon_suivi -> {
-                val intent4 = Intent(this@ConnexionActivity, StatsActivity::class.java)
-                startActivity(intent4)
-            }
-            R.id.nav_message -> {
-
-            }
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
 }

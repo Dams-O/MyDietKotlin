@@ -6,16 +6,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/app_bar_main"
+        tools:showIn="@layout/app_bar_home"
         tools:context=".MainActivity">
 
-    <RelativeLayout
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:padding="25dp"
-            android:orientation="vertical" tools:layout_editor_absoluteY="-404dp"
-            tools:layout_editor_absoluteX="-180dp">
+            android:orientation="vertical">
+
         <ImageView
                 android:layout_width="361dp"
                 android:layout_height="361dp"
@@ -23,25 +23,16 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/logo_3"/>
-        <Button
-                android:text="@string/title_activity_connexion"
-                android:layout_width="104dp"
-                android:layout_height="60dp"
+
+        <TextView
+                android:text="Bonjour, Titi"
                 android:id="@+id/button2"
+                android:textSize="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="380dp"
-                android:layout_marginStart="20dp"
-                android:textColor="@color/colorText"
-                android:background="@color/colorButton"/>
-        <Button
-                android:text="@string/button_inscription"
-                android:layout_width="104dp"
-                android:layout_height="60dp"
-                android:id="@+id/button3"
-                app:layout_constraintStart_toStartOf="@+id/button2"
-                android:layout_marginTop="380dp"
-                android:layout_marginStart="200dp"
-                android:textColor="@color/colorText" android:background="@color/colorButton"/>
-    </RelativeLayout>
+                android:layout_marginTop="80dp"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

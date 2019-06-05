@@ -92,7 +92,7 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
-                val intent1 = Intent(this@StatsActivity, MainActivity::class.java)
+                val intent1 = Intent(this@StatsActivity, HomeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_menu_type -> {

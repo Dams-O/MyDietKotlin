@@ -29,6 +29,9 @@ class User {
     @ColumnInfo(name = "password")
     var password: String? = null
 
+    @ColumnInfo(name = "city")
+    var city: String? = null
+
     @ColumnInfo(name = "status")
     var status: String? = null
 

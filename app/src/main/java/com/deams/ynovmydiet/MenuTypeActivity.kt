@@ -63,7 +63,7 @@ class MenuTypeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
-                val intent1 = Intent(this@MenuTypeActivity, MainActivity::class.java)
+                val intent1 = Intent(this@MenuTypeActivity, HomeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_menu_type -> {

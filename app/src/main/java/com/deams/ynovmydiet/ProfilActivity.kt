@@ -11,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.room.Room
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.activity_profil_content.*
 
 
 class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -22,7 +23,12 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         val database = AppDb.getInstance(this@ProfilActivity)
         System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
-
+        val user = database.userDao().findUserById(0)
+        tv_nom.text = user.name
+        tv_prenom.text = user.lastname
+        tv_age.text = user.birthday
+        tv_ville.text = user.city
+        tv_mail.text = user.mail
         for (m in users){
             Log.i("Nom", m.name)
             Log.i("Prenom", m.lastname)
@@ -45,7 +51,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
-                val intent1 = Intent(this@ProfilActivity, MainActivity::class.java)
+                val intent1 = Intent(this@ProfilActivity, HomeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_menu_type -> {

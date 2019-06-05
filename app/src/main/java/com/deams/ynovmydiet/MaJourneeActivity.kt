@@ -76,7 +76,7 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
-                val intent1 = Intent(this@MaJourneeActivity, MainActivity::class.java)
+                val intent1 = Intent(this@MaJourneeActivity, HomeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_menu_type -> {

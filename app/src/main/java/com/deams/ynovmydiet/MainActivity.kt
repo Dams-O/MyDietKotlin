@@ -13,7 +13,7 @@ import android.content.Intent
 import androidx.room.Room
 import kotlinx.android.synthetic.main.content_main.*
 
-class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         user.name = "Thiery"
         user.lastname = "Henry"
         user.mail = "titi.henry@gmail.com"
+        user.birthday = "17 Août 1977"
+        user.city = "Barcelone"
         database.userDao().insertUser(user)
 
         ajoutAliments()
@@ -47,15 +49,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val toggle = ActionBarDrawerToggle(
-            this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
 
-        navView.setNavigationItemSelectedListener(this)
+
     }
 
     override fun onBackPressed() {
@@ -83,39 +78,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        // Handle navigation view item clicks here.
-        when (item.itemId) {
-            R.id.nav_accueil -> {
-                // Handle the camera action
-                val intent1 = Intent(this@MainActivity, MainActivity::class.java)
-                startActivity(intent1)
-            }
-            R.id.nav_menu_type -> {
-                // Handle the camera action
-                val intent1 = Intent(this@MainActivity, MenuTypeActivity::class.java)
-                startActivity(intent1)
-            }
-            R.id.nav_mon_profil -> {
-                val intent2 = Intent(this@MainActivity, ProfilActivity::class.java)
-                startActivity(intent2)
-            }
-            R.id.nav_mes_journees -> {
-                val intent3 = Intent(this@MainActivity, MenuJourneeActivity::class.java)
-                startActivity(intent3)
-            }
-            R.id.nav_mon_suivi -> {
-                val intent4 = Intent(this@MainActivity, StatsActivity::class.java)
-                startActivity(intent4)
-            }
-            R.id.nav_message -> {
-
-            }
-        }
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        drawerLayout.closeDrawer(GravityCompat.START)
-        return true
-    }
     private fun ajoutAliments(){
         val database = AppDb.getInstance(this@MainActivity)
         val food1 = Food()

@@ -1,24 +1,21 @@
 package com.deams.ynovmydiet
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_inscription.*
-import kotlinx.android.synthetic.main.activity_inscription_content.*
-import kotlinx.android.synthetic.main.nav_header_main.view.*
 
-
-class InscriptionActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inscription)
+        setContentView(R.layout.activity_home)
+
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -33,32 +30,29 @@ class InscriptionActivity : AppCompatActivity(), NavigationView.OnNavigationItem
         navView.setNavigationItemSelectedListener(this)
     }
 
-    /* fun creaCompte(){
-        Pseudo.editText;
-    } */
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
-                val intent1 = Intent(this@InscriptionActivity, HomeActivity::class.java)
+                val intent1 = Intent(this@HomeActivity, HomeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_menu_type -> {
                 // Handle the camera action
-                val intent1 = Intent(this@InscriptionActivity, MenuTypeActivity::class.java)
+                val intent1 = Intent(this@HomeActivity, MenuTypeActivity::class.java)
                 startActivity(intent1)
             }
             R.id.nav_mon_profil -> {
-                val intent2 = Intent(this@InscriptionActivity, ProfilActivity::class.java)
+                val intent2 = Intent(this@HomeActivity, ProfilActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-                val intent2 = Intent(this@InscriptionActivity, MaJourneeActivity::class.java)
-                startActivity(intent2)
+                val intent3 = Intent(this@HomeActivity, MenuJourneeActivity::class.java)
+                startActivity(intent3)
             }
             R.id.nav_mon_suivi -> {
-                val intent4 = Intent(this@InscriptionActivity, StatsActivity::class.java)
+                val intent4 = Intent(this@HomeActivity, StatsActivity::class.java)
                 startActivity(intent4)
             }
             R.id.nav_message -> {
