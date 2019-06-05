@@ -25,6 +25,7 @@
                 android:layout_height="match_parent" app:srcCompat="@mipmap/ic_launcher_round"
                 android:id="@+id/imageView7"/>
     </LinearLayout>
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -32,6 +33,14 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/textView20"/>
+
+        <ImageView
+                android:id="@+id/iv_info"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/info_icon"
+                android:layout_marginLeft="10dp"
+        />
         <TextView
                 android:text="Nom"
                 android:layout_width="match_parent"
@@ -42,8 +51,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_prenom" android:textSize="20sp"
                 android:textAlignment="center"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView201"/>
+
+        <ImageView
+                android:id="@+id/iv_anniv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/anniv_icon"
+                android:layout_marginLeft="10dp"
+        />
         <TextView
                 android:text="Date de naissance"
+                android:layout_toRightOf="@id/textView201"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_naissance" android:textSize="20sp"
                 android:textAlignment="center"/>
@@ -52,6 +74,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_age" android:textSize="20sp"
                 android:textAlignment="center"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView202"/>
+
+        <ImageView
+                android:id="@+id/iv_ville"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ville_icon"
+                android:layout_marginLeft="10dp"
+        />
+
         <TextView
                 android:text="Ville"
                 android:layout_width="match_parent"
