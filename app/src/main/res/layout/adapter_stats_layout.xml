@@ -19,6 +19,22 @@
                 android:layout_height="wrap_content"/>
 
         <TextView
+                android:id="@+id/tv_tiret"
+                android:layout_toRightOf="@id/tv_date"
+                android:text=" - "
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/tv_moment"
+                android:layout_toRightOf="@id/tv_tiret"
+                android:text="Moment"
+                android:textSize="22sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
                 android:id="@+id/tv_description"
                 android:layout_below="@id/tv_date"
                 android:text="Aliments"
@@ -32,6 +48,16 @@
                 android:textColor="#F1832F"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:id="@+id/iv_repas"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dej_icon"
+        />
 
     </RelativeLayout>
 

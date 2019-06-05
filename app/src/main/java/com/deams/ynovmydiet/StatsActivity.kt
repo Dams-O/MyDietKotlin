@@ -37,7 +37,7 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         val repas3 = ResumeMeal()
         repas3.repasId = 0
-        repas3.date = "Lundi 03 Juin - Petit Déjeuner"
+        repas3.date = "Lundi 03 Juin"
         repas3.moment = "Petit Déjeuner"
         repas3.aliment = "Cacao en poudre, Lait"
         repas3.score = "En accord à 50%"
