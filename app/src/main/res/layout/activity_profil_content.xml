@@ -35,27 +35,27 @@
         <TextView
                 android:text="Nom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/nom" android:textSize="20sp"
+                android:layout_height="wrap_content" android:id="@+id/tv_nom" android:textSize="20sp"
                 android:textAlignment="center"/>
         <TextView
                 android:text="Prenom"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/prenom" android:textSize="20sp"
+                android:layout_height="wrap_content" android:id="@+id/tv_prenom" android:textSize="20sp"
                 android:textAlignment="center"/>
         <TextView
                 android:text="Date de naissance"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/naissance" android:textSize="20sp"
+                android:layout_height="wrap_content" android:id="@+id/tv_naissance" android:textSize="20sp"
                 android:textAlignment="center"/>
         <TextView
                 android:text="Âge"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/age" android:textSize="20sp"
+                android:layout_height="wrap_content" android:id="@+id/tv_age" android:textSize="20sp"
                 android:textAlignment="center"/>
         <TextView
                 android:text="Ville"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/ville" android:textSize="20sp"
+                android:layout_height="wrap_content" android:id="@+id/tv_ville" android:textSize="20sp"
                 android:textAlignment="center"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

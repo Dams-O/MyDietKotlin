@@ -28,6 +28,7 @@ class RvAdapter (val foodList: ArrayList<ResumeMeal>):
         val test = p0.score?.text.toString()
         val testMoment = foodList[p1].moment.toString()
 
+        p0.moment?.visibility = View.INVISIBLE
         //Condition Pour photoRepas src
         if(testMoment.equals("Petit Déjeuner")){
             p0.photoRepas.setImageResource(R.drawable.petit_dej_icon)
