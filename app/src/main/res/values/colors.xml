@@ -7,4 +7,10 @@
     <color name="colorBanniere">#cf1d2e</color>
     <color name="colorText">#E72033</color>
     <color name="colorButton">#FFFFFF</color>
+    <color name="colorButtonP">#FA0000</color>
+    <color name="colorButtonL">#FFFF00</color>
+    <color name="colorButtonGL">#FF8F00</color>
+    <color name="colorButtonCA">#007CFF</color>
+    <color name="colorButtonSM">#15EA00</color>
+    <color name="colorButtonSU">#C10075</color>
 </resources>
