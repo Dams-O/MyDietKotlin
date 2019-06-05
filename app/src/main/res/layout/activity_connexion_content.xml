@@ -48,23 +48,26 @@ tools:context=".ConnexionActivity">
                             android:layout_height="wrap_content"
                             android:inputType="textEmailAddress"
                             android:ems="10"
-                            android:id="@+id/email" android:layout_weight="1"
-                            android:hint="@string/prompt_email"/>
+                            android:id="@+id/identifiant" android:layout_weight="1"
+                            android:hint="@string/prompt_identifiant"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
                         android:ems="10"
-                        android:id="@+id/password" android:hint="Mot de passe"/>
+                        android:id="@+id/password"
+                        android:hint="@string/prompt_password"/>
                 <Button
-                        android:id="@+id/email_sign_in_button"
+                        android:id="@+id/btn_connexion"
                         style="?android:textAppearanceSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:text="@string/action_sign_in_short"
-                        android:textStyle="bold"/>
+                        android:textStyle="bold"
+                        android:textColor="@color/colorText"
+                        android:background="@color/colorButton"/>
 
             </LinearLayout>
         </ScrollView>

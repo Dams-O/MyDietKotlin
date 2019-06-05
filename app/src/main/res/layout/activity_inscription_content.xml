@@ -47,7 +47,7 @@
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
                         android:ems="10"
-                        android:id="@+id/editText5" android:hint="@string/prompt_email"/>
+                        android:id="@+id/editText5" android:hint="@string/prompt_identifiant"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

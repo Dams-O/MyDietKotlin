@@ -12,6 +12,9 @@ class ResumeMeal {
     @ColumnInfo(name = "date")
     var date: String? = null
 
+    @ColumnInfo(name = "date")
+    var moment: String? = null
+
     @ColumnInfo(name = "aliment")
     var aliment: String? = null
 

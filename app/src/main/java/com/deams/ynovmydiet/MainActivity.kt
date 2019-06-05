@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val database = AppDb.getInstance(this@MainActivity)
         //Insert TEST
         val user = User()
-        user.username = "test"
-        user.name = "titi"
+        user.userId = 0
+        user.username = "Titi"
+        user.name = "Thiery"
         user.lastname = "Henry"
+        user.mail = "titi.henry@gmail.com"
         database.userDao().insertUser(user)
 
         ajoutAliments()

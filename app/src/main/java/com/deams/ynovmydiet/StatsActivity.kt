@@ -23,31 +23,36 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
 
         val repas1 = ResumeMeal()
         repas1.repasId = 0
-        repas1.date = "Lundi 03 Juin - Diner"
+        repas1.date = "Lundi 03 Juin"
+        repas1.moment = "Diner"
         repas1.aliment = "Agneau, pomme de terre, Chèvre frais, Vin"
         repas1.score = "En accord à 90%"
 
         val repas2 = ResumeMeal()
         repas2.repasId = 0
-        repas2.date = "Lundi 03 Juin - Déjeuner"
+        repas2.date = "Lundi 03 Juin"
+        repas2.moment = "Déjeuner"
         repas2.aliment = "Boeuf, Pattes, Pomme"
         repas2.score = "En accord à 80%"
 
         val repas3 = ResumeMeal()
         repas3.repasId = 0
         repas3.date = "Lundi 03 Juin - Petit Déjeuner"
+        repas3.moment = "Petit Déjeuner"
         repas3.aliment = "Cacao en poudre, Lait"
         repas3.score = "En accord à 50%"
 
         val repas4 = ResumeMeal()
         repas4.repasId = 0
-        repas4.date = "Dimanche 02 Juin - Diner"
+        repas4.date = "Dimanche 02 Juin"
+        repas4.moment = "Diner"
         repas4.aliment = "Steak haché, Frites"
         repas4.score = "En accord à 20%"
 
         val repas5 = ResumeMeal()
         repas5.repasId = 0
-        repas5.date = "Dimanche 02 Juin - Déjeuner"
+        repas5.date = "Dimanche 02 Juin"
+        repas5.moment = "Déjeuner"
         repas5.aliment = "Jambon, Pattes, Emmental"
         repas5.score = "En accord à 70%"
 

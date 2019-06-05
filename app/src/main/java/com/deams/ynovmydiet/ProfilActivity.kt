@@ -20,6 +20,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         setContentView(R.layout.activity_profil)
 
         val database = AppDb.getInstance(this@ProfilActivity)
+        System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
 
         for (m in users){

@@ -22,6 +22,18 @@ class RvAdapter (val foodList: ArrayList<ResumeMeal>):
         p0.aliment?.text = foodList[p1].aliment
         p0.score?.text = foodList[p1].score
         val test = p0.score?.text.toString()
+        val moment = foodList[p1].moment.toString()
+        //Julien
+        if(moment.equals("Petit Déjeuner")){
+
+        }
+        if(moment.equals("Déjeuner")){
+
+        }
+        if(moment.equals("Diner")){
+
+        }
+        //Condition Pour Score color
         if(test.equals("En accord à 100%") || test.equals("En accord à 90%")){
             p0.score?.setTextColor(Color.parseColor("#0EC200"))
         }

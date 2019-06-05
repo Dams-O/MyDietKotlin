@@ -13,7 +13,7 @@ interface UserDAO {
     fun getAllUsers(): List<User>
 
     @Query("SELECT * FROM User WHERE userId = :userId LIMIT 1")
-    fun findUserById(userId: Long?): Food
+    fun findUserById(userId: Long?): User
 
     @Update
     fun updateUser(user: User): Int
