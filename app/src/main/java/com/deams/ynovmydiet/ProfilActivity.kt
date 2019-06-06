@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.room.Room
+import com.deams.ynovmydiet.database.AppDb
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_profil.*
 

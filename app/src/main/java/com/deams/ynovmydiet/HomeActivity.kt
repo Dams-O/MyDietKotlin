@@ -8,8 +8,9 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.deams.ynovmydiet.database.AppDb
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_profil_content.*
+import kotlinx.android.synthetic.main.content_profil.*
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

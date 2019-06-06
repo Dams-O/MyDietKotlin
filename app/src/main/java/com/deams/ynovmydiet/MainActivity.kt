@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.content.Intent
+import com.deams.ynovmydiet.database.AppDb
+import com.deams.ynovmydiet.database.entities.Food
+import com.deams.ynovmydiet.database.entities.User
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {

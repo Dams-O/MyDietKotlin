@@ -10,6 +10,8 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.deams.ynovmydiet.database.AppDb
+import com.deams.ynovmydiet.database.entities.ResumeMeal
 import com.google.android.material.navigation.NavigationView
 
 class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {

@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.deams.ynovmydiet.database.entities.ResumeMeal
 
 
 class RvAdapter (val foodList: ArrayList<ResumeMeal>):

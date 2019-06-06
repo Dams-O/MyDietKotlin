@@ -10,6 +10,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.deams.ynovmydiet.database.AppDb
+import com.deams.ynovmydiet.database.entities.Meal
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_ma_journee.*
 

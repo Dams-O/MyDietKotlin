@@ -1,6 +1,7 @@
-package com.deams.ynovmydiet
+package com.deams.ynovmydiet.database.dao
 
 import androidx.room.*
+import com.deams.ynovmydiet.database.entities.MenuType
 
 
 @Dao

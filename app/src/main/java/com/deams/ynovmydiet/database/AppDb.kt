@@ -1,9 +1,17 @@
-package com.deams.ynovmydiet
+package com.deams.ynovmydiet.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.deams.ynovmydiet.database.dao.FoodDAO
+import com.deams.ynovmydiet.database.dao.MealDAO
+import com.deams.ynovmydiet.database.dao.MenuTypeDAO
+import com.deams.ynovmydiet.database.dao.UserDAO
+import com.deams.ynovmydiet.database.entities.Food
+import com.deams.ynovmydiet.database.entities.Meal
+import com.deams.ynovmydiet.database.entities.MenuType
+import com.deams.ynovmydiet.database.entities.User
 
 
 @Database(entities = [(Meal::class),(MenuType::class),(Food::class),(User::class)], version = 1_3)

@@ -1,4 +1,4 @@
-package com.deams.ynovmydiet
+package com.deams.ynovmydiet.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
