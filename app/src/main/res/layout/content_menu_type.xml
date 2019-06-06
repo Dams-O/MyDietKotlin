@@ -21,7 +21,7 @@
             android:layout_marginTop="10dp">
 
         <TextView
-                android:text="Petit Déjeuner"
+                android:text="@string/str_petit_dej"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_petit_dej" android:textSize="20sp"
@@ -29,7 +29,7 @@
 
         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
             <Button
-                android:text="2"
+                android:text="1"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="wrap_content" android:id="@+id/button"
@@ -47,7 +47,7 @@
                 android:background="@drawable/button_l_background"/>
 
             <Button
-                    android:text="1"
+                    android:text="0"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button3"
@@ -56,7 +56,7 @@
                     android:background="@drawable/button_gl_background"/>
 
             <Button
-                    android:text="3"
+                    android:text="2"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button4"
@@ -74,7 +74,7 @@
                     android:background="@drawable/button_sm_background"/>
 
             <Button
-                    android:text="2"
+                    android:text="1"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button6"
@@ -99,7 +99,7 @@
                 android:layout_height="wrap_content" android:id="@+id/textView201"/>
 
         <TextView
-                android:text="Dejeuner"
+                android:text="@string/str_dej"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_dejeuner" android:textSize="20sp"
@@ -152,7 +152,7 @@
                     android:background="@drawable/button_sm_background"/>
 
             <Button
-                    android:text="4"
+                    android:text="0"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button12"
@@ -177,7 +177,7 @@
                 android:layout_height="wrap_content" android:id="@+id/textView202"/>
 
         <TextView
-                android:text="Dîner"
+                android:text="@string/str_diner"
                 android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_diner" android:textSize="20sp"
@@ -194,7 +194,7 @@
                     android:background="@drawable/button_p_background"/>
 
             <Button
-                    android:text="4"
+                    android:text="3"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button14"
@@ -230,7 +230,7 @@
                     android:background="@drawable/button_sm_background"/>
 
             <Button
-                    android:text="3"
+                    android:text="0"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
                     android:layout_height="wrap_content" android:id="@+id/button18"

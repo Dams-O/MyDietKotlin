@@ -25,7 +25,7 @@
                 android:id="@+id/tv_date"
                 android:layout_toRightOf="@id/iv_repas"
                 android:layout_alignParentTop="true"
-                android:text="Repas"
+                android:text="@string/str_repas"
                 android:textSize="22sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -33,7 +33,7 @@
         <TextView
                 android:id="@+id/tv_moment"
                 android:layout_toRightOf="@id/tv_date"
-                android:text="Moment"
+                android:text="@string/str_moment"
                 android:textSize="22sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

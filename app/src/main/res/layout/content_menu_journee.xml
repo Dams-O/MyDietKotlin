@@ -15,7 +15,7 @@
             android:orientation="vertical">
         <Button
                 android:id="@+id/btn_ptidej"
-                android:text="Petit déjeuner"
+                android:text="@string/str_petit_dej"
                 android:textAllCaps="false"
                 android:padding="10dp"
                 android:textSize="25dp"
@@ -26,7 +26,7 @@
                 android:background="@color/colorButton"/>
         <Button
             android:id="@+id/btn_dej"
-            android:text="Déjeuner"
+            android:text="@string/str_dej"
             android:textAllCaps="false"
             android:padding="10dp"
             android:textSize="25dp"
@@ -37,7 +37,7 @@
             android:background="@color/colorButton"/>
         <Button
                 android:id="@+id/btn_diner"
-                android:text="Diner"
+                android:text="@string/str_diner"
                 android:textAllCaps="false"
                 android:padding="10dp"
                 android:textSize="25dp"

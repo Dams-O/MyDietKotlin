@@ -40,12 +40,12 @@
                 android:layout_marginTop="25dp"
         />
         <TextView
-                android:text="Nom"
+                android:text="@string/str_nom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_nom" android:textSize="20sp"
                 android:textAlignment="center"/>
         <TextView
-                android:text="Prenom"
+                android:text="@string/str_prenom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_prenom" android:textSize="20sp"
                 android:textAlignment="center"
@@ -59,7 +59,7 @@
                 android:layout_marginLeft="10dp"
         />
         <TextView
-                android:text="Âge"
+                android:text="@string/str_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_age" android:textSize="20sp"
                 android:textAlignment="center"
@@ -74,7 +74,7 @@
         />
 
         <TextView
-                android:text="Mail"
+                android:text="@string/str_mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/tv_mail"
@@ -91,7 +91,7 @@
         />
 
         <TextView
-                android:text="Ville"
+                android:text="@string/str_ville"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/tv_ville" android:textSize="20sp"
                 android:textAlignment="center"/>

@@ -20,7 +20,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="25dp"/>
 
     <TextView
-            android:text="Bonjour,"
+            android:text="@string/str_welcome"
             android:id="@+id/tv_hello"
             android:textSize="25sp"
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
     />
 
     <TextView
-            android:text="NOM"
+            android:text="@string/str_nom"
             android:id="@+id/tv_nom"
             android:textSize="25sp"
             android:layout_width="wrap_content"

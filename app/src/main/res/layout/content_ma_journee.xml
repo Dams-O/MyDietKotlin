@@ -16,7 +16,7 @@
             android:padding="25dp"
             android:orientation="vertical">
         <TextView
-                android:text="Moment"
+                android:text="@string/str_moment"
                 android:id="@+id/tv_moment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="Aliment"
+                android:hint="@string/str_aliments"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <AutoCompleteTextView
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="Aliment 1"
+                android:hint="@string/str_aliments"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <AutoCompleteTextView
@@ -44,12 +44,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:hint="Aliment 2"
+                android:hint="@string/str_aliments"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <Button
                 android:id="@+id/btn_saisie"
-                android:text="Enregistrer votre saisie"
+                android:text="@string/str_enr_saisie"
                 android:textAllCaps="false"
                 android:padding="10dp"
                 android:textSize="25dp"

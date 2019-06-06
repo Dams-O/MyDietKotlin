@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">MyDietYnov</string>
+    <string name="app_name">MyDiet</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Thiery Henry</string>
+    <string name="nav_header_title">Thierry Henry</string>
     <string name="nav_header_subtitle">titi.henry@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -11,6 +11,7 @@
     <string name="str_moment">Moment</string>
     <string name="str_score">Score</string>
     <string name="str_repas">Repas</string>
+    <string name="str_welcome">Bonjour,</string>
     <string name="menu_type">Menu Type</string>
     <string name="mes_journees">Mes Journées</string>
     <string name="mon_suivi">Mon Suivi</string>
@@ -20,7 +21,20 @@
     <string name="button_inscription">Inscription</string>
     <string name="button_connexion">Connexion</string>
     <string name="title_activity_connexion_test">Connexion</string>
-    <string name="title">MyDiedt</string>
+    <string name="title">MyDiet</string>
+    <string name="str_nom">Nom</string>
+    <string name="str_prenom">Prénom</string>
+    <string name="str_date">Date de naissance</string>
+    <string name="str_pseudo">Pseudo</string>
+    <string name="str_mdp">Mot de passe</string>
+    <string name="str_mdp_confirm">Confirmation mot de passe</string>
+    <string name="str_enr_saisie">Enregistrer votre saisie</string>
+    <string name="str_petit_dej">Petit déjeuner</string>
+    <string name="str_dej">Déjeuner</string>
+    <string name="str_diner">Diner</string>
+    <string name="str_mail">Mail</string>
+    <string name="str_ville">Ville</string>
+    <string name="str_age">Âge</string>
     <!-- Strings related to login -->
     <string name="prompt_identifiant">Identifiant</string>
     <string name="prompt_password">Mot de passe</string>

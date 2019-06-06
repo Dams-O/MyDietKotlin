@@ -23,25 +23,25 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_nom_inscription" android:hint="Nom"/>
+                        android:id="@+id/edt_nom_inscription" android:hint="@string/str_nom"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_prenom_inscription" android:hint="Prénom"/>
+                        android:id="@+id/edt_prenom_inscription" android:hint="@string/str_prenom"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="date"
                         android:ems="10"
-                        android:id="@+id/edt_date_inscription" android:hint="Date de naissance"/>
+                        android:id="@+id/edt_date_inscription" android:hint="@string/str_date"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_pseudo_inscription" android:hint="Pseudo"/>
+                        android:id="@+id/edt_pseudo_inscription" android:hint="@string/str_pseudo"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -53,13 +53,13 @@
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription" android:hint="Mot de passe"/>
+                        android:id="@+id/edt_password_inscription" android:hint="@string/str_mdp"/>
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
                         android:ems="10"
-                        android:id="@+id/edt_password_confirm_inscription" android:hint="Confirmation mot de passe"/>
+                        android:id="@+id/edt_password_confirm_inscription" android:hint="@string/str_mdp_confirm"/>
                 <Button
                         android:text="@string/button_inscription"
                         android:layout_width="match_parent"
