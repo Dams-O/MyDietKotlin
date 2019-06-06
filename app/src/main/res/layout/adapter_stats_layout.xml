@@ -51,7 +51,6 @@
                 android:layout_toRightOf="@id/iv_repas"
                 android:layout_below="@id/tv_description"
                 android:text="@string/str_score"
-                android:textColor="#F1832F"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
