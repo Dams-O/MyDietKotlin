@@ -79,7 +79,7 @@ class MenuTypeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-                val intent2 = Intent(this@MenuTypeActivity, MaJourneeActivity::class.java)
+                val intent2 = Intent(this@MenuTypeActivity, MenuJourneeActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_message -> {

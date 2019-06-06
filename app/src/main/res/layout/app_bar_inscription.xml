@@ -21,6 +21,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/activity_inscription_content"/>
+    <include layout="@layout/content_inscription"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -13,7 +13,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_ma_journee_content.*
+import kotlinx.android.synthetic.main.content_ma_journee.*
 
 class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

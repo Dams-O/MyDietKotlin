@@ -10,7 +10,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_inscription.*
-import kotlinx.android.synthetic.main.activity_inscription_content.*
+import kotlinx.android.synthetic.main.content_inscription.*
 import kotlinx.android.synthetic.main.nav_header_main.view.*
 
 

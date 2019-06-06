@@ -11,7 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.room.Room
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_profil_content.*
+import kotlinx.android.synthetic.main.content_profil.*
 
 
 class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -67,7 +67,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-                val intent2 = Intent(this@ProfilActivity, MaJourneeActivity::class.java)
+                val intent2 = Intent(this@ProfilActivity, MenuJourneeActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_message -> {

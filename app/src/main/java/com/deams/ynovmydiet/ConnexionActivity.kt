@@ -30,7 +30,7 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_connexion.*
-import kotlinx.android.synthetic.main.activity_connexion_content.*
+import kotlinx.android.synthetic.main.content_connexion.*
 
 
 /**
