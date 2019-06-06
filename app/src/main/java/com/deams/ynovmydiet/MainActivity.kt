@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val user = User()
         user.userId = 0
         user.username = "Titi"
-        user.name = "Thiery"
+        user.name = "Thierry"
         user.lastname = "Henry"
         user.mail = "titi.henry@gmail.com"
         user.birthday = "17 Août 1977"

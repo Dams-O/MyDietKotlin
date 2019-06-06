@@ -24,6 +24,8 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         val intent = getIntent()
         val moment = intent.getStringExtra("moment")
         System.out.println(moment)
+
+        tv_moment.text = moment
         val database = AppDb.getInstance(this@MaJourneeActivity)
 
         val foodList = ArrayList<String?>()
@@ -39,6 +41,8 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         )
 
         auto1.setAdapter(adapterAuto)
+        auto2.setAdapter(adapterAuto)
+        auto3.setAdapter(adapterAuto)
 
         btn_click_me.setOnClickListener {
             // make a toast on button click event
@@ -47,16 +51,20 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             repas.userId = 1
 
             repas.type = "Default";
-            repas.food = edt1.text.toString() + " " + edt2.text.toString()
+            repas.food = auto1.text.toString() + " " + auto2.text.toString()
             database.mealDao().insertMeal(repas)
-            Toast.makeText(this, edt1.text.toString(), Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Votre saisie à bien été enregistrée", Toast.LENGTH_LONG).show()
+
+            val intent1 = Intent(this@MaJourneeActivity, StatsActivity::class.java)
+            intent1.putExtra("moment", "Diner")
+            startActivity(intent1)
         }
 
-        btn2.setOnClickListener {
+        /*btn2.setOnClickListener {
             // make a toast on button click event
             var meal = database.mealDao().findMealById(0)
             Toast.makeText(this, meal.food, Toast.LENGTH_LONG).show()
-        }
+        }*/
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -89,7 +97,7 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
                 startActivity(intent2)
             }
             R.id.nav_mes_journees -> {
-                val intent2 = Intent(this@MaJourneeActivity, MaJourneeActivity::class.java)
+                val intent2 = Intent(this@MaJourneeActivity, MenuJourneeActivity::class.java)
                 startActivity(intent2)
             }
             R.id.nav_mon_suivi -> {

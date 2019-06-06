@@ -15,6 +15,14 @@
             android:gravity="center"
             android:padding="25dp"
             android:orientation="vertical">
+        <TextView
+                android:text="Moment"
+                android:id="@+id/tv_moment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginBottom="25dp"/>
         <AutoCompleteTextView
                 android:id="@+id/auto1"
                 android:layout_width="match_parent"
@@ -23,28 +31,20 @@
                 android:hint="Aliment"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
-        <EditText
-                android:id="@+id/edt1"
+        <AutoCompleteTextView
+                android:id="@+id/auto2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="Aliment 1"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
-        <EditText
-                android:id="@+id/edt2"
+        <AutoCompleteTextView
+                android:id="@+id/auto3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="Aliment 2"
-                android:imeOptions="actionNext"
-                android:inputType="text"/>
-        <EditText
-                android:id="@+id/edt3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="Aliment 3"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
         <Button
@@ -56,16 +56,6 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:textColor="@color/colorText"
-                android:background="@color/colorButton"/>
-        <Button
-                android:id="@+id/btn2"
-                android:text="Check de l'ajout"
-                android:textAllCaps="false"
-                android:padding="10dp"
-                android:textSize="25dp"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
                 android:textColor="@color/colorText"
                 android:background="@color/colorButton"/>
     </LinearLayout>

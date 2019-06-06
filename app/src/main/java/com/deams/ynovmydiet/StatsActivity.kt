@@ -56,11 +56,19 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         repas5.aliment = "Jambon, Pattes, Emmental"
         repas5.score = "En accord à 70%"
 
+        val repas6 = ResumeMeal()
+        repas6.repasId = 0
+        repas6.date = "Mercredi 05 Juin"
+        repas6.moment = "Diner"
+        repas6.aliment = "Carottes, Pomme de terre, Boeuf"
+        repas6.score = "En accord à 80%"
+
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
 
 //        Create an arraylist
         val dataList = ArrayList<ResumeMeal>()
+        dataList.add(repas6)
         dataList.add(repas1)
         dataList.add(repas2)
         dataList.add(repas3)
