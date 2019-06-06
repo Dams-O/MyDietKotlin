@@ -3,10 +3,8 @@ package com.deams.ynovmydiet
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.widget.ArrayAdapter
-import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -44,7 +42,7 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         auto2.setAdapter(adapterAuto)
         auto3.setAdapter(adapterAuto)
 
-        btn_click_me.setOnClickListener {
+        btn_saisie.setOnClickListener {
             // make a toast on button click event
             val repas = Meal()
             repas.mealId = 0

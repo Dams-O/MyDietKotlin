@@ -2,15 +2,12 @@ package com.deams.ynovmydiet
 
 import android.os.Bundle
 import androidx.core.view.GravityCompat
-import androidx.appcompat.app.ActionBarDrawerToggle
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.content.Intent
-import androidx.room.Room
 import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         ajoutAliments()
 
-        button2.setOnClickListener {
+        tv_hello.setOnClickListener {
             // Handler code here.
             val intent2 = Intent(this@MainActivity, ConnexionActivity::class.java)
             startActivity(intent2)
