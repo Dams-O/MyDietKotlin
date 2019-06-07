@@ -4,8 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.ArrayAdapter
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
@@ -14,8 +13,11 @@ import com.deams.ynovmydiet.database.AppDb
 import com.deams.ynovmydiet.database.entities.Meal
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_ma_journee.*
+import androidx.constraintlayout.widget.ConstraintLayout
+
 
 class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+    var id_auto_count= 3
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -60,6 +62,16 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             startActivity(intent1)
         }
 
+        btn_add.setOnClickListener {
+            System.out.println(auto1.getTag())
+            linel.addView(createNewAutoTextView(adapterAuto))
+        }
+
+        btn_del.setOnClickListener {
+            linel.removeView(linel.findViewById(id_auto_count))
+            id_auto_count--
+        }
+
         /*btn2.setOnClickListener {
             // make a toast on button click event
             var meal = database.mealDao().findMealById(0)
@@ -79,6 +91,20 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
         navView.setNavigationItemSelectedListener(this)
     }
+
+    private fun createNewAutoTextView(adapter: ArrayAdapter<String>): TextView {
+        id_auto_count++
+        val lparams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
+        val autotextView = AutoCompleteTextView(this)
+        autotextView.layoutParams = lparams
+        autotextView.setAdapter(adapter)
+        autotextView.setHint("Aliments")
+        System.out.println(autotextView.getId())
+        autotextView.setId(id_auto_count)
+        System.out.println(autotextView.getId())
+        return autotextView
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
