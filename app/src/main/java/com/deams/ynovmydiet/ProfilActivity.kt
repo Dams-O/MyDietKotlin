@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
+import android.widget.ImageView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -11,24 +12,40 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.deams.ynovmydiet.database.AppDb
 import com.google.android.material.navigation.NavigationView
+import com.synnapps.carouselview.CarouselView
+import com.synnapps.carouselview.ImageListener
 import kotlinx.android.synthetic.main.content_profil.*
 
 
+
+
+
 class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
+    var sampleImages = intArrayOf(
+        R.drawable.button_plus_background,
+        R.drawable.anniv_icon,
+        R.drawable.button_su_background
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profil)
 
+        //val carouselView = findViewById(R.id.carouselView) as CarouselView;
+        //carouselView.setPageCount(sampleImages.size);
+        //carouselView.setImageListener(imageListener);
+
+
         val database = AppDb.getInstance(this@ProfilActivity)
         System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
         val user = database.userDao().findUserById(0)
-        tv_nom.text = user.name
-        tv_prenom.text = user.lastname
-        tv_age.text = user.birthday
-        tv_ville.text = user.city
-        tv_mail.text = user.mail
+        //tv_nom.text = user.name
+        //tv_prenom.text = user.lastname
+        //tv_age.text = user.birthday
+        //tv_ville.text = user.city
+        //tv_mail.text = user.mail
         for (m in users){
             Log.i("Nom", m.name)
             Log.i("Prenom", m.lastname)
@@ -45,7 +62,54 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         toggle.syncState()
 
         navView.setNavigationItemSelectedListener(this)
+
+        // Set a click listener for first button widget
+        button1.setOnClickListener {
+            // Get the text fragment instance
+            val textFragment = TextFragment()
+
+            // Get the support fragment manager instance
+            val manager = supportFragmentManager
+
+            // Begin the fragment transition using support fragment manager
+            val transaction = manager.beginTransaction()
+
+            // Replace the fragment on container
+            transaction.replace(R.id.fragment_container,textFragment)
+            transaction.addToBackStack(null)
+
+            // Finishing the transition
+            transaction.commit()
+        }
+
+
+        // Set a click listener for second button widget
+        button2.setOnClickListener {
+            // Get the text fragment instance
+            val imageFragment = ImageFragment()
+
+            // Get the support fragment manager instance
+            val manager = supportFragmentManager
+
+            // Begin the fragment transition using support fragment manager
+            val transaction = manager.beginTransaction()
+
+            // Replace the fragment on container
+            transaction.replace(R.id.fragment_container,imageFragment)
+            transaction.addToBackStack(null)
+
+            // Finishing the transition
+            transaction.commit()
+        }
     }
+
+    var imageListener: ImageListener = object : ImageListener {
+        override fun setImageForPosition(position: Int, imageView: ImageView) {
+            // You can use Glide or Picasso here
+            imageView.setImageResource(sampleImages[position])
+        }
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {

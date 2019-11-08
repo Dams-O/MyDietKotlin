@@ -10,7 +10,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.deams.ynovmydiet.database.AppDb
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.content_profil.*
+import kotlinx.android.synthetic.main.content_home.*
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

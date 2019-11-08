@@ -9,91 +9,39 @@
         tools:showIn="@layout/app_bar_profil"
         tools:context=".MainActivity">
 
-    <LinearLayout
-            android:layout_width="423dp"
-            android:layout_height="120dp"
-            android:background="@drawable/side_nav_bar"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark"
-            android:orientation="vertical"
-            android:gravity="bottom" tools:layout_editor_absoluteY="0dp" tools:layout_editor_absoluteX="-6dp">
-        <ImageView
-                android:layout_width="340dp"
-                android:layout_height="83dp" app:srcCompat="@drawable/iconuser_1"
-                android:id="@+id/iv_img_profil"/>
-    </LinearLayout>
+
 
     <LinearLayout
-            android:orientation="vertical"
+            android:id="@+id/root_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:layout_marginTop="120dp">
-
-        <ImageView
-                android:id="@+id/iv_info"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/info_icon"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="25dp"
-        />
-        <TextView
-                android:text="@string/str_nom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_nom" android:textSize="20sp"
-                android:textAlignment="center"/>
-        <TextView
-                android:text="@string/str_prenom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_prenom" android:textSize="20sp"
-                android:textAlignment="center"
-                android:layout_marginBottom="25dp"/>
-
-        <ImageView
-                android:id="@+id/iv_anniv"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/anniv_icon"
-                android:layout_marginLeft="10dp"
-        />
-        <TextView
-                android:text="@string/str_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_age" android:textSize="20sp"
-                android:textAlignment="center"
-                android:layout_marginBottom="25dp"/>
-
-        <ImageView
-                android:id="@+id/iv_mail"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/iconmail"
-                android:layout_marginLeft="10dp"
-        />
-
-        <TextView
-                android:text="@string/str_mail"
-                android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#f8fdf8"
+            >
+        <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_mail"
-                android:textSize="20sp"
-                android:textAlignment="center"
-                android:layout_marginBottom="25dp"/>
+                android:text="Information"
+                android:textAllCaps="false"
+                />
 
-        <ImageView
-                android:id="@+id/iv_ville"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/ville_icon"
-                android:layout_marginLeft="10dp"
-        />
+        <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestion du compte"
+                android:textAllCaps="false" />
 
-        <TextView
-                android:text="@string/str_ville"
+        <LinearLayout
+                android:id="@+id/fragment_container"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/tv_ville" android:textSize="20sp"
-                android:textAlignment="center"/>
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#c1cfba"
+                />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
