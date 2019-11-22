@@ -6,18 +6,12 @@
         android:orientation="vertical"
         android:padding="16dp"
         >
-    <Button
-            android:id="@+id/changerMdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Changer de mot de passe"
-            android:textAllCaps="false"
-            />
 
-    <Button
-            android:id="@+id/changerMail"
+    <TextView
+            android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Changer d'adresse mail"
-            android:textAllCaps="false" />
+            android:text="Voici les infos de l'appli"
+            android:textSize="50sp"
+            />
 </LinearLayout>

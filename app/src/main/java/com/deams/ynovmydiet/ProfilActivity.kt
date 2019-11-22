@@ -41,8 +41,8 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
         val user = database.userDao().findUserById(0)
-        //tv_nom.text = user.name
-        //tv_prenom.text = user.lastname
+        tv_nom.text = user.name
+        tv_prenom.text = user.lastname
         //tv_age.text = user.birthday
         //tv_ville.text = user.city
         //tv_mail.text = user.mail
