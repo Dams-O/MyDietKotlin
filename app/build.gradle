@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 28
@@ -38,6 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:17.3.4'
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
+    implementation 'com.synnapps:carouselview:0.1.4'
 
 
     testImplementation 'junit:junit:4.12'
