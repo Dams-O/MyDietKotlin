@@ -41,14 +41,14 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
         val user = database.userDao().findUserById(0)
-        tv_nom.text = user.name
-        tv_prenom.text = user.lastname
+        tv_nom.text = user.pseudo
+        tv_prenom.text = user.first_name
         //tv_age.text = user.birthday
         //tv_ville.text = user.city
         //tv_mail.text = user.mail
         for (m in users){
-            Log.i("Nom", m.name)
-            Log.i("Prenom", m.lastname)
+            Log.i("Nom", m.last_name)
+            Log.i("Prenom", m.first_name)
         }
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)

@@ -1,5 +1,6 @@
 package com.deams.ynovmydiet
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +10,15 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.deams.ynovmydiet.database.AppDb
+import com.deams.ynovmydiet.database.services.UserService
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_home.*
+import com.androidexample.usersessions.UserSessionManager
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.widget.Toast
+
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -18,9 +26,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val database = AppDb.getInstance(this@HomeActivity)
-        val user = database.userDao().findUserById(0)
-        tv_nom.text = user.username
+
+        val id_user = intent.getStringExtra("id_user")
+        val pseudo = intent.getStringExtra("pseudo")
+        println(id_user)
+        tv_nom.text = pseudo
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -38,6 +48,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
+        val id_user = intent.getStringExtra("id_user")
         when (item.itemId) {
             R.id.nav_accueil -> {
                 // Handle the camera action
@@ -55,10 +66,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_mes_journees -> {
                 val intent3 = Intent(this@HomeActivity, MenuJourneeActivity::class.java)
+                intent3.putExtra("id_user", id_user)
                 startActivity(intent3)
             }
             R.id.nav_mon_suivi -> {
-                val intent4 = Intent(this@HomeActivity, StatsActivity::class.java)
+                val intent4 = Intent(this@HomeActivity, UserActivity::class.java)
                 startActivity(intent4)
             }
             R.id.nav_message -> {

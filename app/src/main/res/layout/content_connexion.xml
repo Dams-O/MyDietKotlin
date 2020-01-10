@@ -41,16 +41,19 @@ tools:context=".ConnexionActivity">
                     android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="200dp">
+
                     <EditText
+                            android:id="@+id/mail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textEmailAddress"
+                            android:layout_weight="1"
                             android:ems="10"
-                            android:id="@+id/identifiant" android:layout_weight="1"
-                            android:hint="@string/prompt_identifiant"/>
+                            android:hint="@string/prompt_identifiant"
+                            android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
                 <EditText
                         android:layout_width="match_parent"

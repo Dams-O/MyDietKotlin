@@ -16,10 +16,11 @@ class MenuJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItem
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_journee)
-
+        val id_user = intent.getStringExtra("id_user")
+        println(id_user)
         btn_ptidej.setOnClickListener {
             val intent1 = Intent(this@MenuJourneeActivity, MaJourneeActivity::class.java)
-            intent1.putExtra("moment", "Petit Dej")
+            intent1.putExtra("id_user", id_user)
             startActivity(intent1)
         }
 

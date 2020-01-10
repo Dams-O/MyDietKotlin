@@ -38,23 +38,8 @@
                 android:hint="@string/str_aliments"
                 android:imeOptions="actionNext"
                 android:inputType="text"/>
-        <AutoCompleteTextView
-                android:id="@+id/auto2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="@string/str_aliments"
-                android:imeOptions="actionNext"
-                android:inputType="text"/>
-        <AutoCompleteTextView
-                android:id="@+id/auto3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:hint="@string/str_aliments"
-                android:imeOptions="actionNext"
-                android:inputType="text"/>
-        </LinearLayout>
+
+    </LinearLayout>
     </ScrollView>
     <RelativeLayout
             android:id="@+id/line2"

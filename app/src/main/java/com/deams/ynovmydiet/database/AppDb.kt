@@ -14,7 +14,7 @@ import com.deams.ynovmydiet.database.entities.MenuType
 import com.deams.ynovmydiet.database.entities.User
 
 
-@Database(entities = [(Meal::class),(MenuType::class),(Food::class),(User::class)], version = 1_3)
+@Database(entities = [(Meal::class),(MenuType::class),(Food::class),(User::class)], version = 1_9,exportSchema = false)
 abstract class AppDb : RoomDatabase(){
     abstract fun mealDao(): MealDAO
     abstract fun menuTypeDao(): MenuTypeDAO

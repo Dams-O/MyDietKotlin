@@ -14,6 +14,20 @@ import com.deams.ynovmydiet.database.entities.Meal
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.content_ma_journee.*
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.deams.ynovmydiet.database.entities.User
+import com.deams.ynovmydiet.database.services.UserService
+import com.squareup.moshi.Json
+import org.json.JSONObject
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import com.google.gson.JsonObject
+import androidx.core.app.ComponentActivity.ExtraData
+import androidx.core.content.ContextCompat.getSystemService
+import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -22,12 +36,9 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ma_journee)
+        val id_user = intent.getStringExtra("id_user")
+        println(id_user)
 
-        val intent = getIntent()
-        val moment = intent.getStringExtra("moment")
-        System.out.println(moment)
-
-        tv_moment.text = moment
         val database = AppDb.getInstance(this@MaJourneeActivity)
 
         val foodList = ArrayList<String?>()
@@ -43,19 +54,38 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         )
 
         auto1.setAdapter(adapterAuto)
-        auto2.setAdapter(adapterAuto)
-        auto3.setAdapter(adapterAuto)
+
 
         btn_saisie.setOnClickListener {
-            // make a toast on button click event
-            val repas = Meal()
-            repas.mealId = 0
-            repas.userId = 1
+            println(auto1.text.toString())
 
-            repas.type = "Default";
-            repas.food = auto1.text.toString() + " " + auto2.text.toString()
-            database.mealDao().insertMeal(repas)
-            Toast.makeText(this, "Votre saisie à bien été enregistrée", Toast.LENGTH_LONG).show()
+            val jsonObject = JsonObject()
+            jsonObject.addProperty("id", id_user)
+            jsonObject.addProperty("Aliment1", auto1.text.toString())
+            jsonObject.addProperty("Aliment2", "Pomme de terre")
+            println(jsonObject)
+
+
+            val retrofit = Retrofit.Builder()
+                .baseUrl("http://backapi-mydietapp.43ki6n3qg7.eu-west-1.elasticbeanstalk.com/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+            val service = retrofit.create(UserService::class.java)
+
+            // On lance le service loginUser avec l'identifiant 'mail' et le password
+            val courseRequest = service.createDataUser(jsonObject)
+            courseRequest.enqueue(object : Callback<Void> {
+
+                override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                    println("YES")
+                }
+
+                override fun onFailure(call: Call<Void>, t: Throwable) {
+                    println("PAS YES")
+                }
+
+
+            })
 
             val intent1 = Intent(this@MaJourneeActivity, StatsActivity::class.java)
             intent1.putExtra("moment", "Diner")
@@ -101,7 +131,6 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         autotextView.setHint("Aliments")
         System.out.println(autotextView.getId())
         autotextView.setId(id_auto_count)
-        System.out.println(autotextView.getId())
         return autotextView
     }
 

@@ -23,13 +23,12 @@ class MainActivity : AppCompatActivity() {
         val database = AppDb.getInstance(this@MainActivity)
         //Insert TEST
         val user = User()
-        user.userId = 0
-        user.username = "Titi"
-        user.name = "Thierry"
-        user.lastname = "Henry"
+        user.id_user = 0
+        user.pseudo = "Titi"
+        user.first_name = "Thierry"
+        user.last_name = "Henry"
         user.mail = "titi.henry@gmail.com"
         user.birthday = "17 Août 1977"
-        user.city = "Barcelone"
         database.userDao().insertUser(user)
 
         ajoutAliments()

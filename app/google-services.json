@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "38736827103",
+    "firebase_url": "https://pushnotificationmydietkotlin.firebaseio.com",
+    "project_id": "pushnotificationmydietkotlin",
+    "storage_bucket": "pushnotificationmydietkotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38736827103:android:7070945393c03332",
+        "android_client_info": {
+          "package_name": "com.deams.ynovmydiet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38736827103-nfl6t290ea108b2q10af4f8kn4rm1o4b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deams.ynovmydiet",
+            "certificate_hash": "73f39bd4d3d2754024e28e48bba74f58bb6d1f32"
+          }
+        },
+        {
+          "client_id": "38736827103-iqpgrd5fl8musmg6o8db5u4lhma5aa7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2dhDwMrRymwTO-XoA4YilnrW7MoQkaNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38736827103-iqpgrd5fl8musmg6o8db5u4lhma5aa7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
