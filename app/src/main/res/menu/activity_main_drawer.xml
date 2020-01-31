@@ -24,14 +24,18 @@
                 android:id="@+id/nav_mon_suivi"
                 android:icon="@drawable/ic_star_black"
                 android:title="@string/mon_suivi"/>
+        <item
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_message"
+                android:id="@+id/nav_message"/>
+        <item
+                android:id="@+id/nav_stat"
+                android:icon="@drawable/stats"
+                android:title="Statistique"/>
+        <item
+                android:id="@+id/deconnexion"
+                android:icon="@drawable/deconnexion"
+                android:title="Déconnexion"/>
+
     </group>
-
-    <item android:title="A venir">
-        <menu>
-            <item
-                    android:icon="@drawable/ic_menu_send"
-                    android:title="@string/menu_message" android:id="@+id/nav_message"/>
-        </menu>
-    </item>
-
 </menu>
