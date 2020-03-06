@@ -24,9 +24,9 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.layout_connexion)
 
-
+/**
         val id_user = intent.getStringExtra("id_user")
         val pseudo = intent.getStringExtra("pseudo")
         println(id_user)
@@ -43,7 +43,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
-        navView.setNavigationItemSelectedListener(this)
+        navView.setNavigationItemSelectedListener(this) **/
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

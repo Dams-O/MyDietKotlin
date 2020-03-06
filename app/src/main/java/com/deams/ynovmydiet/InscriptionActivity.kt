@@ -39,9 +39,9 @@ class InscriptionActivity : AppCompatActivity() {
             val mail = edt_mail_inscription.text.toString()
             val password = edt_password_inscription.text.toString()
             val confirm_password = edt_password_confirm_inscription.text.toString()
-            val pseudo = edt_password_inscription.text.toString()
-            val last_name = edt_password_inscription.text.toString()
-            val first_name = edt_password_inscription.text.toString()
+            val pseudo = edt_pseudo_inscription.text.toString()
+            val last_name = edt_last_name_inscription.text.toString()
+            val first_name = edt_first_name_inscription.text.toString()
 
 
             // On initialise la connexion à la base de donnée grâçe à retrofit

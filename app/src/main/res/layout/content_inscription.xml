@@ -19,99 +19,59 @@
                 android:layout_height="440dp">
             <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
                           android:orientation="vertical">
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:ems="10"
-                        android:id="@+id/edt_nom_inscription" android:hint="@string/str_nom"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
-                        android:ems="10"
-                        android:id="@+id/edt_prenom_inscription" android:hint="@string/str_prenom"/>
 
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_pseudo_inscription" android:hint="@string/str_pseudo"/>
+                        android:id="@+id/edt_mail_inscription" android:hint="Email"/>
 
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription" android:hint="@string/str_mdp"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:ems="10"
-                        android:id="@+id/edt_password_inscription" android:hint="@string/str_mdp"/>
+                        android:id="@+id/edt_password_inscription" android:hint="Mot de passe"/>
 
                 <EditText
-                        android:id="@+id/edt_mail_inscription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription2" android:hint="@string/str_mdp"/>
+                        android:id="@+id/edt_password_confirm_inscription" android:hint="Confirm Password"/>
+
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription3" android:hint="@string/str_mdp"/>
+                        android:id="@+id/edt_pseudo_inscription" android:hint="Pseudo"/>
+
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription4" android:hint="@string/str_mdp"/>
+                        android:id="@+id/edt_last_name_inscription" android:hint="Prénom"/>
+
                 <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
+                        android:inputType="textPersonName"
                         android:ems="10"
-                        android:id="@+id/edt_password_inscription5" android:hint="@string/str_mdp"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:ems="10"
-                        android:id="@+id/edt_password_inscription6" android:hint="@string/str_mdp"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:ems="10"
-                        android:id="@+id/edt_password_inscription7" android:hint="@string/str_mdp"/>
-                <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:ems="10"
-                        android:id="@+id/edt_password_confirm_inscription" android:hint="@string/str_mdp_confirm"/>
+                        android:id="@+id/edt_first_name_inscription" android:hint="Nom"/>
+
                 <Button
-                        android:text="@string/button_inscription"
+                        android:id="@+id/btn_inscription"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/btn_inscription"
-                        android:backgroundTint="@color/colorButton" android:textColor="@color/colorText"
-                        tools:layout_editor_absoluteY="-7dp" tools:layout_editor_absoluteX="419dp"/>
+                        android:layout_height="wrap_content"
+                        android:text="@string/button_inscription" />
+
             </LinearLayout>
         </ScrollView>
 
-        <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
 
-            <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true" />
-        </LinearLayout>
 
     </LinearLayout>
 

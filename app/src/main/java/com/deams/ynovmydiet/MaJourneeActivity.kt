@@ -35,7 +35,8 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ma_journee)
+        setContentView(R.layout.layout_type)
+        /**
         val id_user = intent.getStringExtra("id_user")
         println(id_user)
 
@@ -120,6 +121,7 @@ class MaJourneeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         toggle.syncState()
 
         navView.setNavigationItemSelectedListener(this)
+        **/
     }
 
     private fun createNewAutoTextView(adapter: ArrayAdapter<String>): TextView {

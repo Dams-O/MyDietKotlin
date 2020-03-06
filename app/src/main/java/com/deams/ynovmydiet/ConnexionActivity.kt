@@ -18,8 +18,8 @@ import com.deams.ynovmydiet.database.entities.User
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
-
-
+import android.widget.Button
+import android.widget.ImageButton
 
 
 /**
@@ -29,11 +29,15 @@ class ConnexionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_connexion)
+        setContentView(R.layout.layout_connexion)
 
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        val btn_mdp_oublie: Button = findViewById(R.id.mdpoublie)
+        btn_mdp_oublie.setOnClickListener {
+            val intent = Intent(this@ConnexionActivity, MotDePasseOublieActivity::class.java)
+            startActivity(intent)
+        }
 
+        val btn_connexion: ImageButton = findViewById(R.id.btn_connexion)
         btn_connexion.setOnClickListener {
 
             // On récupère les données du body dans les variables mail et password
