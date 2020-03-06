@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".MenuJourneeActivity">
         </activity>
+        <activity android:name=".MotDePasseOublieActivity">
+        </activity>
         <activity android:name=".MaJourneeActivity">
         </activity>
         <activity android:name=".StatsActivity">
