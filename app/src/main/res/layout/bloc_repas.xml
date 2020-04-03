@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:columnCount="5"
+                android:rowCount="1"
+                app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu">
+
+
+            <ImageView
+                    android:id="@+id/dejeuner"
+                    android:layout_width="160dp"
+                    android:layout_height="270dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="48dp"
+                    android:contentDescription="Boutton plus"
+                    app:srcCompat="@drawable/petit_dejeuner" />
+
+            <ImageView
+                    android:id="@+id/diner"
+                    android:layout_width="153dp"
+                    android:layout_height="275dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="48dp"
+                    android:contentDescription="Boutton plus"
+                    app:srcCompat="@drawable/dejeuner" />
+
+            <ImageView
+                    android:id="@+id/petit_dejeuner"
+                    android:layout_width="160dp"
+                    android:layout_height="270dp"
+                    android:layout_column="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="48dp"
+                    android:contentDescription="Boutton plus"
+                    app:srcCompat="@drawable/dinner" />
+
+        </GridLayout>
+    </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

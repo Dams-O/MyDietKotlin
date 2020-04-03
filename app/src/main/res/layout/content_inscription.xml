@@ -63,7 +63,7 @@
                         android:id="@+id/edt_first_name_inscription" android:hint="Nom"/>
 
                 <Button
-                        android:id="@+id/btn_inscription"
+                        android:id="@+id/btn_inscription_validation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/button_inscription" />

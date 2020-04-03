@@ -2,37 +2,30 @@ package com.deams.ynovmydiet
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
-import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import com.deams.ynovmydiet.database.entities.User
 import com.deams.ynovmydiet.database.services.UserService
-import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_inscription.*
-import kotlinx.android.synthetic.main.content_connexion.*
 import kotlinx.android.synthetic.main.content_inscription.*
-import kotlinx.android.synthetic.main.nav_header_main.view.*
 import okhttp3.ResponseBody
 import retrofit2.*
 import retrofit2.Call
 import retrofit2.converter.moshi.MoshiConverterFactory
-import retrofit2.Call as Retrofit2Call
 
 
 class InscriptionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inscription)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        setContentView(R.layout.layout_inscription)
 
-
-
+        val retour_croix: ImageButton = findViewById(R.id.retour_croix)
+        retour_croix.setOnClickListener {
+            val intent = Intent(this@InscriptionActivity, ConnexionActivity::class.java)
+            startActivity(intent)
+        }
+        val btn_inscription: ImageButton = findViewById(R.id.btn_inscription_validation)
         btn_inscription.setOnClickListener {
 
             // On récupère les données du body dans les variables

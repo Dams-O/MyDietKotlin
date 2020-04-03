@@ -1,12 +1,9 @@
 package com.deams.ynovmydiet
 
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.deams.ynovmydiet.database.services.UserService
 import kotlinx.android.synthetic.main.content_connexion.*
 import retrofit2.Call
@@ -15,9 +12,6 @@ import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import com.deams.ynovmydiet.database.entities.User
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.widget.Button
 import android.widget.ImageButton
 
@@ -36,13 +30,21 @@ class ConnexionActivity : AppCompatActivity() {
             val intent = Intent(this@ConnexionActivity, MotDePasseOublieActivity::class.java)
             startActivity(intent)
         }
+        val btn_inscription: Button = findViewById(R.id.btn_inscription_validation)
+        btn_inscription.setOnClickListener {
+            val intent = Intent(this@ConnexionActivity, InscriptionActivity::class.java)
+            startActivity(intent)
+        }
 
         val btn_connexion: ImageButton = findViewById(R.id.btn_connexion)
         btn_connexion.setOnClickListener {
-
+            val intent = Intent(this@ConnexionActivity, HomeActivity::class.java)
+            startActivity(intent)
             // On récupère les données du body dans les variables mail et password
-            val mail = mail.text.toString()
+            /*val mail = mail.text.toString()
             val password = password.text.toString()
+            println(mail)
+            println(password)
 
             // On initialise la connexion à la base de donnée grâçe à retrofit
             val retrofit = Retrofit.Builder()
@@ -76,7 +78,7 @@ class ConnexionActivity : AppCompatActivity() {
                     println("KO")
                 }
             })
-
+*/
             }
 
         }
