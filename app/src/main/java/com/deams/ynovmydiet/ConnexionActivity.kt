@@ -2,6 +2,7 @@ package com.deams.ynovmydiet
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.deams.ynovmydiet.database.services.UserService
@@ -14,6 +15,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import com.deams.ynovmydiet.database.entities.User
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.RadioButton
 
 
 /**
@@ -40,7 +42,22 @@ class ConnexionActivity : AppCompatActivity() {
         btn_connexion.setOnClickListener {
             val intent = Intent(this@ConnexionActivity, HomeActivity::class.java)
             startActivity(intent)
-            // On récupère les données du body dans les variables mail et password
+        }
+
+        var button_background : Int = 1
+        val connexion: ImageButton = findViewById(R.id.radioButton)
+        connexion.setOnClickListener {
+            if(button_background==2){
+                connexion.setBackgroundResource(R.drawable.iconeon)
+                button_background=1
+            } else if(button_background==1){
+                connexion.setBackgroundResource(R.drawable.iconeoff)
+                button_background=2
+            }
+        }
+
+
+        // On récupère les données du body dans les variables mail et password
             /*val mail = mail.text.toString()
             val password = password.text.toString()
             println(mail)
@@ -79,7 +96,6 @@ class ConnexionActivity : AppCompatActivity() {
                 }
             })
 */
-            }
 
         }
     }

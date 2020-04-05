@@ -128,18 +128,6 @@
                 app:layout_constraintVertical_bias="0.427"
                 app:srcCompat="@drawable/iconeemail" />
 
-        <ImageView
-                android:id="@+id/imageView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.871"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.621"
-                app:srcCompat="@drawable/iconeon" />
-
         <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
@@ -163,6 +151,8 @@
                 android:layout_marginBottom="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/btn_inscription_validation"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/iconefleche" />
@@ -190,10 +180,9 @@
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.567"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.944" />
+                app:layout_constraintVertical_bias="0.94" />
 
         <Button
                 android:id="@+id/btn_inscription_validation"
@@ -206,10 +195,24 @@
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintHorizontal_bias="0.413"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+                android:id="@+id/radioButton"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/iconeoff"
+                android:clickable="true"
+                android:onClick="Checked"
+                app:layout_constraintBottom_toTopOf="@+id/btn_connexion"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/password"
+                app:layout_constraintVertical_bias="0.133" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="374dp"
+                android:layout_height="466dp"
+                app:layout_constraintBottom_toBottomOf="@+id/include_bloc_menu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.417"
+                app:srcCompat="@drawable/fondblancmenutype" />
+
+        <ImageView
+                android:id="@+id/oeuf"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.242"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/oeuf" />
+
+        <ImageView
+                android:id="@+id/ble"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.236"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.484"
+                app:srcCompat="@drawable/ble" />
+
+        <ImageView
+                android:id="@+id/chocolat"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.232"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.968"
+                app:srcCompat="@drawable/chocolat" />
+
+        <ImageView
+                android:id="@+id/pomme"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.763"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/pomme" />
+
+        <ImageView
+                android:id="@+id/yaourt"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.763"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.496"
+                app:srcCompat="@drawable/yaourt" />
+
+        <ImageView
+                android:id="@+id/huile"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                app:layout_constraintHorizontal_bias="0.763"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.977"
+                app:srcCompat="@drawable/huile" />
+
+        <TextView
+                android:id="@+id/chiffre_oeuf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/oeuf"
+                app:layout_constraintEnd_toEndOf="@+id/oeuf"
+                app:layout_constraintHorizontal_bias="0.484"
+                app:layout_constraintStart_toStartOf="@+id/oeuf"
+                app:layout_constraintTop_toTopOf="@+id/oeuf"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/chiffre_yaourt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/yaourt"
+                app:layout_constraintEnd_toEndOf="@+id/yaourt"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="@+id/yaourt"
+                app:layout_constraintTop_toTopOf="@+id/yaourt"
+                app:layout_constraintVertical_bias="0.991" />
+
+        <TextView
+                android:id="@+id/chiffre_huile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/huile"
+                app:layout_constraintEnd_toEndOf="@+id/huile"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="@+id/huile"
+                app:layout_constraintTop_toTopOf="@+id/huile"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/chiffre_chocolat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/chocolat"
+                app:layout_constraintEnd_toEndOf="@+id/chocolat"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="@+id/chocolat"
+                app:layout_constraintTop_toTopOf="@+id/chocolat"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/chiffre_ble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/ble"
+                app:layout_constraintEnd_toEndOf="@+id/ble"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="@+id/ble"
+                app:layout_constraintTop_toTopOf="@+id/ble"
+                app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+                android:id="@+id/chiffre_pomme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="4"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/pomme"
+                app:layout_constraintEnd_toEndOf="@+id/pomme"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="@+id/pomme"
+                app:layout_constraintTop_toTopOf="@+id/pomme"
+                app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

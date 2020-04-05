@@ -21,6 +21,16 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             val intent1 = Intent(this@HomeActivity, MaJournee2Activity::class.java)
             startActivity(intent1)
         }
+        val btn_menu_type: ImageButton = findViewById(R.id.btn_menu_type)
+        btn_menu_type.setOnClickListener {
+            val intent1 = Intent(this@HomeActivity, MenuTypeActivity::class.java)
+            startActivity(intent1)
+        }
+        val btn_accueil: ImageButton = findViewById(R.id.btn_accueil)
+        btn_accueil.setOnClickListener {
+            val intent1 = Intent(this@HomeActivity, HomeActivity::class.java)
+            startActivity(intent1)
+        }
 
 /**
         val id_user = intent.getStringExtra("id_user")
