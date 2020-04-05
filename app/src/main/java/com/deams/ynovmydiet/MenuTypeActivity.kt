@@ -2,15 +2,8 @@ package com.deams.ynovmydiet
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MenuItem
-import androidx.appcompat.app.ActionBarDrawerToggle
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import com.deams.ynovmydiet.database.AppDb
-import com.deams.ynovmydiet.database.entities.MenuType
-import com.google.android.material.navigation.NavigationView
 
 
 class MenuTypeActivity : AppCompatActivity(){
@@ -18,5 +11,12 @@ class MenuTypeActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_menu_type)
+
+        val btn_modifier: ImageButton = findViewById(R.id.btn_retour)
+        btn_modifier.setOnClickListener {
+            val intent = Intent(this@MenuTypeActivity, ModifierMenuTypeActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
