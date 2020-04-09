@@ -51,7 +51,7 @@
                 android:ems="10"
                 android:fontFamily="@font/montserrat"
                 android:hint="Mot de passe"
-                android:inputType="textEmailAddress"
+                android:inputType="textVisiblePassword"
                 android:paddingLeft="90dp"
                 android:paddingRight="50dp"
                 android:paddingBottom="5dp"

@@ -40,32 +40,17 @@ class ConnexionActivity : AppCompatActivity() {
 
         val btn_connexion: ImageButton = findViewById(R.id.btn_connexion)
         btn_connexion.setOnClickListener {
-            val intent = Intent(this@ConnexionActivity, HomeActivity::class.java)
-            startActivity(intent)
-        }
 
-        var button_background : Int = 1
-        val connexion: ImageButton = findViewById(R.id.radioButton)
-        connexion.setOnClickListener {
-            if(button_background==2){
-                connexion.setBackgroundResource(R.drawable.iconeon)
-                button_background=1
-            } else if(button_background==1){
-                connexion.setBackgroundResource(R.drawable.iconeoff)
-                button_background=2
-            }
-        }
-
-
-        // On récupère les données du body dans les variables mail et password
-            /*val mail = mail.text.toString()
+            // On récupère les données du body dans les variables mail et password
+            val mail = mail.text.toString()
             val password = password.text.toString()
+
             println(mail)
             println(password)
 
             // On initialise la connexion à la base de donnée grâçe à retrofit
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://backapi-mydietapp.43ki6n3qg7.eu-west-1.elasticbeanstalk.com/")
+                .baseUrl("http://mydiet-env.eba-ngy5cnjb.eu-west-3.elasticbeanstalk.com/")
                 .addConverterFactory(MoshiConverterFactory.create())
                 .build()
             val service = retrofit.create(UserService::class.java)
@@ -95,7 +80,22 @@ class ConnexionActivity : AppCompatActivity() {
                     println("KO")
                 }
             })
-*/
+        }
+
+        var button_background : Int = 1
+        val connexion: ImageButton = findViewById(R.id.radioButton)
+        connexion.setOnClickListener {
+            if(button_background==2){
+                connexion.setBackgroundResource(R.drawable.iconeon)
+                button_background=1
+            } else if(button_background==1){
+                connexion.setBackgroundResource(R.drawable.iconeoff)
+                button_background=2
+            }
+        }
+
+
+
 
         }
     }

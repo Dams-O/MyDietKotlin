@@ -50,7 +50,7 @@ class InscriptionActivity : AppCompatActivity() {
             // Si les mots de passe correspondent
             if (password == confirm_password) {
                 // On lance le service createUser avec les informations de l'utilisateur
-                val courseRequest = service.createUser(last_name, first_name, pseudo, mail, password)
+                val courseRequest = service.createUser(first_name, pseudo, mail, password)
                 courseRequest.enqueue(object : Callback<ResponseBody> {
                     // En cas de réussite
                     override fun onResponse(
