@@ -41,7 +41,7 @@ tools:context=".ConnexionActivity">
                     android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/username"
+                        android:id="@+id/pseudo"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="200dp">
