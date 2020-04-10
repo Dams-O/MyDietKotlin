@@ -14,8 +14,8 @@ import com.deams.ynovmydiet.database.AppDb
 import com.deams.ynovmydiet.database.entities.ResumeMeal
 import com.google.android.material.navigation.NavigationView
 
-class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+class StatsActivity : AppCompatActivity() {
+/*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stats)
@@ -130,4 +130,5 @@ class StatsActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelect
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
+    */
 }

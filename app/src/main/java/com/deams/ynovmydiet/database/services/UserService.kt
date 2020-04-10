@@ -18,7 +18,7 @@ interface UserService {
     @FormUrlEncoded
     @POST("/api/createUser")
     fun createUser(
-                   @Field("first_name") first_name:String,
+                   @Field("firstname") firstname:String,
                    @Field("pseudo") pseudo:String,
                    @Field("mail") mail:String,
                    @Field("password") password:String): Call<ResponseBody>

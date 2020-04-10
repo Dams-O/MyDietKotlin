@@ -155,7 +155,7 @@
                 app:layout_constraintStart_toEndOf="@+id/btn_inscription_validation"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/iconefleche" />
+                app:srcCompat="@drawable/flechedroiterouge" />
 
         <ImageButton
                 android:id="@+id/btn_connexion"

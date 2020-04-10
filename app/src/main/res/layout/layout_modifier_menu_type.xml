@@ -36,7 +36,7 @@
                 android:id="@+id/btn_retour"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:background="@drawable/flechegauche"
+                android:background="@drawable/flechegaucherouge"
                 app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.13"

@@ -29,7 +29,7 @@ class RvAdapter (val foodList: ArrayList<ResumeMeal>):
         val test = p0.score?.text.toString()
         val testMoment = foodList[p1].moment.toString()
 
-        p0.moment?.visibility = View.INVISIBLE
+        /* p0.moment?.visibility = View.INVISIBLE
         //Condition Pour photoRepas src
         if(testMoment.equals("Petit Déjeuner")){
             p0.photoRepas.setImageResource(R.drawable.petit_dej_icon)
@@ -39,7 +39,7 @@ class RvAdapter (val foodList: ArrayList<ResumeMeal>):
         }
         if(testMoment.equals("Diner")){
             p0.photoRepas.setImageResource(R.drawable.diner_icon)
-        }
+        } */
 
         //Condition Pour Score color
         if(test.equals("En accord à 100%") || test.equals("En accord à 90%")){

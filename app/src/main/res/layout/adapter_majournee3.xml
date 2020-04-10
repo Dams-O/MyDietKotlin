@@ -29,7 +29,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="250dp"
-                android:src="@drawable/flechegauche"/>
+                android:src="@drawable/flechegaucherouge"/>
 
         <TextView
                 android:id="@+id/NombreR"
@@ -50,7 +50,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="300dp"
-                android:src="@drawable/flechedroite"/>
+                android:src="@drawable/flechedroiterouge"/>
 
     </RelativeLayout>
 

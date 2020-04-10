@@ -16,12 +16,8 @@ import com.synnapps.carouselview.CarouselView
 import com.synnapps.carouselview.ImageListener
 import kotlinx.android.synthetic.main.content_profil.*
 
-
-
-
-
-class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
-
+class ProfilActivity : AppCompatActivity() {
+/*
     var sampleImages = intArrayOf(
         R.drawable.button_plus_background,
         R.drawable.anniv_icon,
@@ -141,5 +137,5 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
-
+*/
 }

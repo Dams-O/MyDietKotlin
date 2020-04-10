@@ -35,7 +35,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="48dp"
                     android:contentDescription="Boutton plus"
-                    app:srcCompat="@drawable/petit_dejeuner" />
+                    app:srcCompat="@drawable/accueilpetitdejeuner" />
 
             <ImageView
                     android:id="@+id/diner"
@@ -47,7 +47,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="48dp"
                     android:contentDescription="Boutton plus"
-                    app:srcCompat="@drawable/dejeuner" />
+                    app:srcCompat="@drawable/accueildejeuner" />
 
             <ImageView
                     android:id="@+id/petit_dejeuner"
@@ -58,7 +58,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="48dp"
                     android:contentDescription="Boutton plus"
-                    app:srcCompat="@drawable/dinner" />
+                    app:srcCompat="@drawable/accueildinner" />
 
         </GridLayout>
     </HorizontalScrollView>

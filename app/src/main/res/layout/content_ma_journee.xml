@@ -48,32 +48,30 @@
             android:padding="25dp"
             android:orientation="vertical"
             android:layout_marginTop="0dp">
+
         <Button
                 android:id="@+id/btn_add"
-                android:textAllCaps="false"
-                android:text="+"
-                android:textSize="30dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginBottom="20dp"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:text="+"
+                android:textAllCaps="false"
                 android:textColor="@color/colorButton"
-                android:background="@drawable/button_plus_background"
-                />
+                android:textSize="30dp" />
+
         <Button
                 android:id="@+id/btn_del"
-                android:textAllCaps="false"
-                android:text="-"
-                android:textSize="30dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:layout_marginBottom="20dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:text="-"
+                android:textAllCaps="false"
                 android:textColor="@color/colorButton"
-                android:background="@drawable/button_plus_background"
-        />
+                android:textSize="30dp" />
         <Button
                 android:id="@+id/btn_saisie"
                 android:text="@string/str_enr_saisie"

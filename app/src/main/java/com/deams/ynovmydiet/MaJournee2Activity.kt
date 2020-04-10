@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.deams.ynovmydiet.database.services.UserService
-import kotlinx.android.synthetic.main.content_connexion.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

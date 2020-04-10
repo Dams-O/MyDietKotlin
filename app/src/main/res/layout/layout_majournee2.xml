@@ -40,7 +40,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.594"
-                app:srcCompat="@drawable/fonddejquelrepas" />
+                app:srcCompat="@drawable/dejrepas" />
 
         <ImageView
                 android:id="@+id/petitdej"
@@ -51,7 +51,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.277"
-                app:srcCompat="@drawable/fondptitdejquelrepas" />
+                app:srcCompat="@drawable/petitdejrepas" />
 
         <ImageView
                 android:id="@+id/dinner"
@@ -62,7 +62,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.938"
-                app:srcCompat="@drawable/fonddinnerquelrepas" />
+                app:srcCompat="@drawable/dinnerrepas" />
 
         <TextView
                 android:id="@+id/monobjectif3"
@@ -86,7 +86,7 @@
                 android:id="@+id/pluspetitdej"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/pluspageaccueilblanc"
+                android:background="@drawable/pluspageaccueil"
                 app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.785"
@@ -98,7 +98,7 @@
                 android:id="@+id/plusdej"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/pluspageaccueilblanc"
+                android:background="@drawable/pluspageaccueil"
                 app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.785"
@@ -110,7 +110,7 @@
                 android:id="@+id/plusdinner"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:background="@drawable/pluspageaccueilblanc"
+                android:background="@drawable/pluspageaccueil"
                 app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.785"
