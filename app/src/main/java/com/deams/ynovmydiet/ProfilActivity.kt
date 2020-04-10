@@ -30,7 +30,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profil)
+        setContentView(R.layout.content_profil)
 
         //val carouselView = findViewById(R.id.carouselView) as CarouselView;
         //carouselView.setPageCount(sampleImages.size);
@@ -41,8 +41,6 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         System.out.println(getIntent().getStringExtra("id"))
         val users = database.userDao().getAllUsers()
         val user = database.userDao().findUserById(0)
-        tv_nom.text = user.pseudo
-        tv_prenom.text = user.first_name
         //tv_age.text = user.birthday
         //tv_ville.text = user.city
         //tv_mail.text = user.mail
@@ -50,7 +48,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
             Log.i("Nom", m.last_name)
             Log.i("Prenom", m.first_name)
         }
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
+        /**val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
@@ -62,6 +60,7 @@ class ProfilActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelec
         toggle.syncState()
 
         navView.setNavigationItemSelectedListener(this)
+        **/
 
         // Set a click listener for first button widget
         button1.setOnClickListener {

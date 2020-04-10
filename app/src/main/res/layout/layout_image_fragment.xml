@@ -6,56 +6,288 @@
         android:orientation="vertical"
         android:padding="16dp"
         >
-    <ImageView
-            android:id="@+id/image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_ca_background"
 
-            />
-    <Button
-            android:id="@+id/changerMdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Changer de mot de passe"
-            android:textAllCaps="false"
-            />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="387dp">
 
-    <EditText
-            android:id="@+id/newMdp"
+        <TextView
+                android:id="@+id/stats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Mes statistiques"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+                android:layout_width="318dp"
+                android:layout_height="228dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/carreblanc"
+                android:orientation="vertical">
+
+            <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                <ImageView
+                        android:id="@+id/objectifsemaine"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="0dp"
+                        android:src="@drawable/cerclevide" />
+
+                <ImageView
+                        android:id="@+id/resumesemaine"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/cerclevide" />
+
+                <TextView
+                        android:id="@+id/objectifsemaineecrit"
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="D'objectifs atteints cette semaine"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="15dp" />
+
+                <TextView
+                        android:id="@+id/resumesemaineecrit"
+                        android:layout_width="150dp"
+                        android:layout_height="75dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Le résumé de votre semaine"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="15dp" />
+
+            </GridLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:hint="Taille"
-            android:inputType="textPassword"
-            android:visibility="invisible"/>
-    <EditText
-            android:id="@+id/newMdpVerif"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:hint="Taille"
-            android:inputType="textPassword"
-            android:visibility="invisible"
-            />
-    <Button
-            android:id="@+id/changerMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Changer d'adresse mail"
-            android:textAllCaps="false" />
-    <EditText
-            android:id="@+id/newMail"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:hint="Taille"
-            android:inputType="textPassword"
-            android:visibility="invisible"
-            />
-    <EditText
-            android:id="@+id/newMailVerif"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:hint="Taille"
-            android:inputType="textPassword"
-            android:visibility="invisible"
-            />
+            android:layout_height="387dp">
+
+        <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="19dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Tes préférences"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/carreblanc"
+                android:orientation="vertical">
+            <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="2"
+                    android:rowCount="4">
+                <TextView
+                        android:id="@+id/Notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Notifications"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_row="0"
+                        android:layout_column="0"/>
+
+                <ImageView
+                        android:id="@+id/NotificationB"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeoff"
+                        android:layout_row="0"
+                        android:layout_column="1"/>
+
+                <ImageView
+                        android:id="@+id/NotificationBC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeon"
+                        android:layout_row="0"
+                        android:layout_column="1"/>
+                <TextView
+                        android:id="@+id/Newsletter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_gravity="center"
+                        android:text="Newsletter"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_row="1"
+                        android:layout_column="0"/>
+
+                <ImageView
+                        android:id="@+id/NewletterB"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeoff"
+                        android:layout_row="1"
+                        android:layout_column="1"/>
+
+                <ImageView
+                        android:id="@+id/NewletterBC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeon"
+                        android:layout_row="1"
+                        android:layout_column="1"/>
+
+                <TextView
+                        android:id="@+id/resteconnecte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:layout_gravity="center"
+                        android:text="Rester connecté"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_row="2"
+                        android:layout_column="0"/>
+                <ImageView
+                        android:id="@+id/resteconnecteB"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeoff"
+                        android:layout_row="2"
+                        android:layout_column="1"/>
+
+                <ImageView
+                        android:id="@+id/resteconnecteBC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeon"
+                        android:layout_row="2"
+                        android:layout_column="1"/>
+
+                <TextView
+                        android:id="@+id/Son"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Son"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <ImageView
+                        android:id="@+id/SonB"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeoff"
+                        android:layout_row="3"
+                        android:layout_column="1"/>
+
+                <ImageView
+                        android:id="@+id/SonBC"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/iconeon"
+                        android:layout_row="3"
+                        android:layout_column="1"/>
+            </GridLayout>
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

@@ -26,7 +26,7 @@ class TextFragment : Fragment(){
         val view = inflater!!.inflate(R.layout.layout_text_fragment,container,false)
 
         // Get the text view widget reference from custom layout
-        val tv = view.findViewById<TextView>(R.id.text_view)
+        /**val tv = view.findViewById<TextView>(R.id.text_view)
 
         // Set a click listener for text view object
         tv.setOnClickListener{
@@ -35,7 +35,7 @@ class TextFragment : Fragment(){
 
             // Show click confirmation
             Toast.makeText(view.context,"TextView clicked.",Toast.LENGTH_SHORT).show()
-        }
+        }**/
 
         // Return the fragment view/layout
         return view
