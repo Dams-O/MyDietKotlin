@@ -23,7 +23,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="0dp"
-                android:src="@drawable/dej_icon"/>
+                android:src="@drawable/iconeanniversaire"/>
 
 
         <TextView

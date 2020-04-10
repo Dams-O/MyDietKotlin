@@ -12,11 +12,10 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.content_menu_journee.*
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-class MonSuiviActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class MonSuiviActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +29,7 @@ class MonSuiviActivity : AppCompatActivity(), NavigationView.OnNavigationItemSel
         val formatter = DateTimeFormatter.BASIC_ISO_DATE
         val formatted = current.format(formatter)
 
-        val date = findViewById(R.id.text_view_date) as TextView;
-        date.setText(formatted);
+        val date = findViewById(R.id.text_view_date) as TextView
+        date.setText(formatted)
     }
 }
