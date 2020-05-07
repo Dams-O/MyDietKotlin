@@ -1,17 +1,10 @@
 package com.deams.ynovmydiet
 
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.appcompat.widget.Toolbar
-import androidx.core.view.GravityCompat
-import androidx.drawerlayout.widget.DrawerLayout
-import com.google.android.material.navigation.NavigationView
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -28,8 +21,8 @@ class MonSuiviActivity : AppCompatActivity() {
 
         val formatter = DateTimeFormatter.BASIC_ISO_DATE
         val formatted = current.format(formatter)
-
-        val date = findViewById(R.id.text_view_date) as TextView
-        date.setText(formatted)
+/*
+        val date = findViewById(R.id.date) as TextView
+        date.setText(formatted)*/
     }
 }

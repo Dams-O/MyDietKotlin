@@ -23,7 +23,12 @@ interface UserService {
                    @Field("mail") mail:String,
                    @Field("password") password:String): Call<ResponseBody>
 
-    @Headers("Content-Type: application/json")
+    @FormUrlEncoded
     @POST("/api/createDataUser")
-    fun createDataUser(@Body body: JsonObject): Call<Void>
+    fun createDataUser(
+        @Field("id_user") id_user:Long,
+        @Field("meal_category") meal_category:String,
+        @Field("id_food") id_food:Char,
+        @Field("date") date:String
+    ): Call<ResponseBody>
 }

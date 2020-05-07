@@ -123,19 +123,4 @@ class MaJourneeActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener(this)
          **/
     }
-
-    private fun createNewAutoTextView(adapter: ArrayAdapter<String>): TextView {
-        id_auto_count++
-        val lparams = LinearLayout.LayoutParams(
-            LinearLayout.LayoutParams.MATCH_PARENT,
-            LinearLayout.LayoutParams.WRAP_CONTENT
-        )
-        val autotextView = AutoCompleteTextView(this)
-        autotextView.layoutParams = lparams
-        autotextView.setAdapter(adapter)
-        autotextView.setHint("Aliments")
-        System.out.println(autotextView.getId())
-        autotextView.setId(id_auto_count)
-        return autotextView
-    }
 }

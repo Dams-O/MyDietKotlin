@@ -21,7 +21,7 @@
         <ScrollView
                 android:id="@+id/scrollView2"
                 android:layout_width="0dp"
-                android:layout_height="576dp"
+                android:layout_height="0dp"
                 app:layout_constraintBottom_toTopOf="@+id/include_bloc_menu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -34,6 +34,35 @@
 
                 <RelativeLayout
                         android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <TextView
+                            android:id="@+id/monobjectif4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="26dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="89dp"
+                            android:layout_toStartOf="@+id/MaJournee"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:text="Ma journée"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <include
+                            layout="@layout/activity_calendar"
+                            android:layout_width="191dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="178dp"
+                            android:layout_marginEnd="4dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
                         android:layout_height="387dp">
 
                     <TextView
@@ -43,10 +72,11 @@
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="30dp"
-                            android:layout_marginTop="19dp"
+                            android:layout_marginTop="33dp"
                             android:fontFamily="@font/montserrat_bold"
                             android:text="Mon Objectif"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="18sp" />
 
                     <LinearLayout
                             android:layout_width="match_parent"
@@ -76,7 +106,8 @@
                         android:layout_marginTop="19dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:text="Mes Repas"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="18sp" />
 
                 <include
                         layout="@layout/bloc_repas"
@@ -97,7 +128,8 @@
                             android:layout_marginTop="19dp"
                             android:fontFamily="@font/montserrat_bold"
                             android:text="Eau"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textSize="18sp" />
 
                     <LinearLayout
                             android:layout_width="match_parent"

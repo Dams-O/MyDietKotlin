@@ -24,7 +24,7 @@
                     android:layout_column="0"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="30dp"
-                    android:src="@drawable/oeuf" />
+                    android:src="@drawable/viande" />
 
             <ImageView
                     android:id="@+id/pomme"
@@ -34,7 +34,7 @@
                     android:layout_column="1"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="30dp"
-                    android:src="@drawable/pomme" />
+                    android:src="@drawable/pommeverte" />
 
             <ImageView
                     android:id="@+id/huile"
@@ -104,8 +104,7 @@
                     android:layout_column="0"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/ble"
-                    android:src="@drawable/ble" />
+                    android:src="@drawable/bleorange" />
 
             <ImageView
                     android:id="@+id/yaourt"
@@ -118,11 +117,13 @@
 
             <ImageView
                     android:id="@+id/chocolat"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="15dp"
-                    android:src="@drawable/chocolat" />
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/chocolatviolet" />
 
             <ImageView
                     android:id="@+id/barreble"

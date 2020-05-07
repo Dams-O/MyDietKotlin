@@ -17,17 +17,15 @@
             android:theme="@style/AppTheme">
         <activity android:name=".HomeActivity">
         </activity>
-        <activity android:name=".MenuJourneeActivity">
+        <activity android:name=".MaJournee3Activity">
         </activity>
         <activity android:name=".MotDePasseOublieActivity">
         </activity>
         <activity android:name=".MaJourneeActivity">
         </activity>
-        <activity android:name=".StatsActivity">
+        <activity android:name=".StatActivity">
         </activity>
         <activity android:name=".ModifierMenuTypeActivity">
-        </activity>
-        <activity android:name=".UserActivity">
         </activity>
         <activity android:name=".MainActivity"
                   android:label="@string/title_activity_main"

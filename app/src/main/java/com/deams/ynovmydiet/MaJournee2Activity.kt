@@ -2,28 +2,33 @@ package com.deams.ynovmydiet
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.deams.ynovmydiet.database.services.UserService
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
-import com.deams.ynovmydiet.database.entities.User
-import android.widget.Button
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 
-
-/**
- * A login screen that offers login via email/password.
- */
 class MaJournee2Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_majournee2)
 
+        val btn_ajout_petit_dejeuner: ImageButton = findViewById(R.id.pluspetitdej)
+        btn_ajout_petit_dejeuner.setOnClickListener {
+            val intent = Intent(this, MaJournee3Activity::class.java)
+            intent.putExtra("journee", "petit_dejeuner")
+            startActivity(intent)
+        }
+        val btn_ajout_dejeuner: ImageButton = findViewById(R.id.plusdej)
+        btn_ajout_dejeuner.setOnClickListener {
+            val intent = Intent(this, MaJournee3Activity::class.java)
+            intent.putExtra("journee", "dejeuner")
+            startActivity(intent)
+        }
+        val btn_ajout_dinner: ImageButton = findViewById(R.id.plusdinner)
+        btn_ajout_dinner.setOnClickListener {
+            val intent = Intent(this, MaJournee3Activity::class.java)
+            intent.putExtra("journee", "dinner")
+            startActivity(intent)
+        }
 
 
     }
