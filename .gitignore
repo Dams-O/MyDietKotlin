@@ -1,2 +1,5 @@
 /.idea
 local.properties
+SharedCode/build/tmp/androidJar/MANIFEST.MF
+
+SharedCode/build/tmp/androidJar/
