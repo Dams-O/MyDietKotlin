@@ -6,7 +6,6 @@
         <dependsOnModuleNames>:SharedCode:commonTest</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>SharedCode_iosMain</sourceSet>
-          <sourceSet>SharedCode_commonTest</sourceSet>
           <sourceSet>SharedCode_commonMain</sourceSet>
           <sourceSet>SharedCode_commonTest</sourceSet>
         </sourceSets>
@@ -36,12 +35,6 @@
     <orderEntry type="jdk" jdkName="Kotlin SDK" jdkType="KotlinSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.21" level="project" />
-<<<<<<< Updated upstream
-    <orderEntry type="module" module-name="SharedCode_commonMain" scope="TEST" />
-    <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.21 - stdlib" level="project" />
-    <orderEntry type="module" module-name="SharedCode_commonTest" scope="TEST" production-on-test="" />
-    <orderEntry type="module" module-name="SharedCode_iosMain" scope="TEST" />
-=======
     <orderEntry type="module" module-name="SharedCode_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module" module-name="SharedCode_commonMain" scope="TEST" />
     <orderEntry type="module" module-name="SharedCode_iosMain" scope="TEST" />
@@ -161,7 +154,6 @@
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.21 - stdlib" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.21 - WebKit [ios_x64]" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Kotlin/Native 1.3.21 - zlib [ios_x64]" level="project" />
->>>>>>> Stashed changes
   </component>
   <component name="TestModuleProperties" production-module="SharedCode_iosMain" />
 </module>

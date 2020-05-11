@@ -6,7 +6,6 @@
         <dependsOnModuleNames>:SharedCode:commonTest</dependsOnModuleNames>
         <sourceSets>
           <sourceSet>SharedCode_androidMain</sourceSet>
-          <sourceSet>SharedCode_commonTest</sourceSet>
           <sourceSet>SharedCode_commonMain</sourceSet>
           <sourceSet>SharedCode_commonTest</sourceSet>
         </sourceSets>
@@ -14,11 +13,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/classes/kotlin/android/test" />
-<<<<<<< Updated upstream
-          <option name="classpath" value="$MODULE_DIR$/build/classes/kotlin/android/main;C:/Users/Damien/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar;C:/Users/Damien/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar;C:/Users/Damien/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
-=======
           <option name="classpath" value="$MODULE_DIR$/build/classes/kotlin/android/main:/Users/damien/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/Users/damien/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/Users/damien/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
->>>>>>> Stashed changes
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="SharedCode" />
@@ -55,10 +50,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.21" level="project" />
     <orderEntry type="module" module-name="SharedCode_commonTest" scope="TEST" production-on-test="" />
     <orderEntry type="module" module-name="SharedCode_commonMain" scope="TEST" />
-<<<<<<< Updated upstream
-    <orderEntry type="module" module-name="SharedCode_commonTest" scope="TEST" production-on-test="" />
-=======
->>>>>>> Stashed changes
   </component>
   <component name="TestModuleProperties" production-module="SharedCode_androidMain" />
 </module>
