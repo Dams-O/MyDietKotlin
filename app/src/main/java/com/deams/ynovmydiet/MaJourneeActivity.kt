@@ -12,7 +12,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.deams.ynovmydiet.database.AppDb
 import com.deams.ynovmydiet.database.entities.Meal
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.content_ma_journee.*
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.deams.ynovmydiet.database.entities.User
 import com.deams.ynovmydiet.database.services.UserService
