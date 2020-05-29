@@ -19,6 +19,6 @@ interface FoodDAO {
     @Query("SELECT * FROM Food WHERE name = :name LIMIT 1")
     fun findFoodByName(name: String?): Food
 
-    @Query("SELECT * FROM Food WHERE family = :family LIMIT 1")
-    fun findFoodByFamily(family: String?): Food
+    @Query("SELECT * FROM Food WHERE id_category = :id_category LIMIT 1")
+    fun findFoodByFamily(id_category: String?): Food
 }

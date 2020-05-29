@@ -12,7 +12,7 @@ class Food {
     @ColumnInfo(name = "name")
     var name: String? = null
 
-    @ColumnInfo(name = "family")
-    var family: String? = null
+    @ColumnInfo(name = "id_category")
+    var id_category: String? = null
 
 }

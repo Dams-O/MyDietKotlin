@@ -7,7 +7,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/constraint">
 
         <include
                 android:id="@+id/include_bloc_menu"
@@ -62,35 +63,43 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.553">
 
-            <TextView
-                    android:id="@+id/aliment1"
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btn_valider"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Pain"
-                    android:textSize="16sp"
+                    android:clickable="true"
+                    app:backgroundTint="@android:color/white"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.263"
+                    app:layout_constraintHorizontal_bias="0.934"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.309" />
+                    app:layout_constraintVertical_bias="0.957"
+                    app:srcCompat="@drawable/iconevalidermdp" />
 
-            <TextView
-                    android:id="@+id/contenu1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="16"
-                    android:textSize="16sp"
-                    tools:layout_editor_absoluteX="175dp"
-                    tools:layout_editor_absoluteY="126dp" />
+            <AutoCompleteTextView
+                    android:id="@+id/search"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.847"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.041" />
 
-            <ImageButton
-                    android:id="@+id/btn_valider"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:background="@drawable/plus"
-                    tools:layout_editor_absoluteX="90dp"
-                    tools:layout_editor_absoluteY="284dp" />
+            <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="200dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/btn_valider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/search"></LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

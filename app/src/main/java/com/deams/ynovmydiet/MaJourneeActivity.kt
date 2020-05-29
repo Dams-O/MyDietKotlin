@@ -30,42 +30,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 class MaJourneeActivity : AppCompatActivity() {
-    var id_auto_count = 3
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_type)
-        /**
-        val id_user = intent.getStringExtra("id_user")
-        println(id_user)
-
-        val database = AppDb.getInstance(this@MaJourneeActivity)
-
-        val foodList = ArrayList<String?>()
-        val testsarr = database.foodDao().getAllFoods()
-        for (food in testsarr){
-        foodList.add(food.name)
-        }
-
-        val adapterAuto = ArrayAdapter<String>(
-        this,
-        android.R.layout.simple_dropdown_item_1line,
-        foodList
-        )
-
-        auto1.setAdapter(adapterAuto)
-
-
-        btn_saisie.setOnClickListener {
-        println(auto1.text.toString())
-
-        val jsonObject = JsonObject()
-        jsonObject.addProperty("id", id_user)
-        jsonObject.addProperty("Aliment1", auto1.text.toString())
-        jsonObject.addProperty("Aliment2", "Pomme de terre")
-        println(jsonObject)
-
-
+/*
         val retrofit = Retrofit.Builder()
         .baseUrl("http://backapi-mydietapp.43ki6n3qg7.eu-west-1.elasticbeanstalk.com/")
         .addConverterFactory(GsonConverterFactory.create())
@@ -84,42 +52,11 @@ class MaJourneeActivity : AppCompatActivity() {
         println("PAS YES")
         }
 
-
         })
+*/
 
-        val intent1 = Intent(this@MaJourneeActivity, StatsActivity::class.java)
-        intent1.putExtra("moment", "Diner")
-        startActivity(intent1)
-        }
 
-        btn_add.setOnClickListener {
-        System.out.println(auto1.getTag())
-        linel.addView(createNewAutoTextView(adapterAuto))
-        }
 
-        btn_del.setOnClickListener {
-        linel.removeView(linel.findViewById(id_auto_count))
-        id_auto_count--
-        }
 
-        /*btn2.setOnClickListener {
-        // make a toast on button click event
-        var meal = database.mealDao().findMealById(0)
-        Toast.makeText(this, meal.food, Toast.LENGTH_LONG).show()
-        }*/
-
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val toggle = ActionBarDrawerToggle(
-        this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
-        )
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        navView.setNavigationItemSelectedListener(this)
-         **/
     }
 }

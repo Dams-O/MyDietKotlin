@@ -1,7 +1,9 @@
 package com.deams.ynovmydiet
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
@@ -28,6 +30,18 @@ class MaJournee2Activity : AppCompatActivity() {
             val intent = Intent(this, MaJournee3Activity::class.java)
             intent.putExtra("journee", "dinner")
             startActivity(intent)
+        }
+
+        val deco: Button = findViewById(R.id.deco)
+        deco.setOnClickListener{
+            val sharedPref = getSharedPreferences("user_details", Context.MODE_PRIVATE)
+            val editor = sharedPref.edit()
+            editor.clear()
+            editor.apply()
+            finish()
+            val intent = Intent(this, ConnexionActivity::class.java)
+            startActivity(intent)
+
         }
 
 
