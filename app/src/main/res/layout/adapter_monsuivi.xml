@@ -27,7 +27,7 @@
 
 
         <TextView
-                android:id="@+id/tv_date"
+                android:id="@+id/food"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -41,7 +41,7 @@
                 android:id="@+id/tv_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_date"
+                android:layout_below="@id/food"
                 android:layout_marginLeft="58dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@id/iv_repas"

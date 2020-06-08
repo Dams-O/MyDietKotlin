@@ -60,7 +60,7 @@ class RvAdapter (val foodList: ArrayList<ResumeMeal>):
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val date = itemView.findViewById<TextView>(R.id.tv_date)
+        val date = itemView.findViewById<TextView>(R.id.food)
         val aliment = itemView.findViewById<TextView>(R.id.tv_description)
         val score = itemView.findViewById<TextView>(R.id.tv_score)
         val moment = itemView.findViewById<TextView>(R.id.tv_moment)

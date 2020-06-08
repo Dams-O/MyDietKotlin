@@ -23,7 +23,7 @@
                 android:layout_marginLeft="0dp" />
 
         <TextView
-                android:id="@+id/tv_date"
+                android:id="@+id/food"
                 android:layout_toRightOf="@id/iv_repas"
                 android:layout_alignParentTop="true"
                 android:text="@string/str_repas"
@@ -33,7 +33,7 @@
 
         <TextView
                 android:id="@+id/tv_moment"
-                android:layout_toRightOf="@id/tv_date"
+                android:layout_toRightOf="@id/food"
                 android:text="@string/str_moment"
                 android:textSize="22sp"
                 android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
         <TextView
                 android:id="@+id/tv_description"
                 android:layout_toRightOf="@id/iv_repas"
-                android:layout_below="@id/tv_date"
+                android:layout_below="@id/food"
                 android:text="@string/str_aliments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>

@@ -1,19 +1,22 @@
 package com.deams.ynovmydiet
 
+import android.animation.ObjectAnimator
+import android.animation.ValueAnimator
 import android.content.Context
-import android.content.Intent
+import android.graphics.Path
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.TextView
-import android.widget.Toast
+import android.view.animation.AnimationUtils
+import android.view.animation.LinearInterpolator
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.deams.ynovmydiet.database.entities.Food
 import com.deams.ynovmydiet.database.services.UserService
+import kotlinx.android.synthetic.main.adapter_majournee3.view.*
 import kotlinx.android.synthetic.main.layout_majournee3.*
-import kotlinx.android.synthetic.main.layout_text_fragment.*
+import kotlinx.coroutines.NonCancellable.start
+import lecho.lib.hellocharts.animation.ChartDataAnimator.DEFAULT_ANIMATION_DURATION
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -86,18 +89,48 @@ class MaJournee3Activity : AppCompatActivity() {
         search.setAdapter(adapterAuto)
         val id_food: ArrayList<String> = ArrayList()
 
-
-        search.setOnItemClickListener { parent, view, position, id ->
-            val item = parent.getItemAtPosition(position).toString()
-            val dynamicTextview = TextView(this)
-
-            dynamicTextview.text = item
-            linear.addView(dynamicTextview)
-
-            id_food += item
-            println(id_food)
+        search.setOnFocusChangeListener { v, hasFocus ->
+            val animationLeft = AnimationUtils.loadAnimation(this, R.anim.search_transition_left)
+            animationLeft.setFillAfter(true)
+            loupe.startAnimation(animationLeft)
         }
 
+        search.setOnItemClickListener { parent, view, position, id ->
+
+            val item = parent.getItemAtPosition(position).toString()
+            if(item !in id_food) {
+
+                val newView =
+                    this.layoutInflater.inflate(R.layout.adapter_majournee3, null) as LinearLayout
+
+                val mainView =
+                    findViewById<View>(R.id.linear_food) as LinearLayout
+
+                var chiffre = 1
+                newView.NombreR.text = chiffre.toString()
+                newView.food.text = item
+
+                linear_food.setPadding(100, 0, 0, 0)
+                mainView.addView(newView)
+
+                newView.flecheG.setOnClickListener {
+                    chiffre -= 1
+                    newView.NombreR.text = chiffre.toString()
+                    if (chiffre == 0) {
+                        newView.removeAllViews()
+                        id_food -= item
+                    }
+                }
+
+                newView.flecheD.setOnClickListener {
+                    chiffre += 1
+                    newView.NombreR.text = chiffre.toString()
+                }
+
+                id_food += item
+                println(id_food)
+            }
+        }
 
 
         val date = "12/12/12"
@@ -105,10 +138,6 @@ class MaJournee3Activity : AppCompatActivity() {
 
         btn_valider.setOnClickListener {
             val id_food_array = arrayOf(1,2,4,3,5)
-            /*for (i in 0..id_food.size -1 ) {
-                id_food_array[i] = id_food[i]
-                println(id_food_array[0])
-            }*/
 
             val retrofit = Retrofit.Builder()
                 .baseUrl("http://mydiet-env.eba-ngy5cnjb.eu-west-3.elasticbeanstalk.com/")
